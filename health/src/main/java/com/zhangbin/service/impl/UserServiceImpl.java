@@ -32,4 +32,14 @@ public class UserServiceImpl implements UserService {
     public int addUser(User user) {
         return userMapper.addUser(user);
     }
+
+    @Override
+    public User queryUser(String login_name) {
+        return userMapper.queryUser(login_name);
+    }
+
+    @Override
+    public User queryUserPassword(String password) {
+        return userMapper.queryUserPassword(password);
+    }
 }

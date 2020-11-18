@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
 <head>
 <title>Matrix Admin</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
-<link rel="stylesheet" href="css/fullcalendar.css" />
-<link rel="stylesheet" href="css/matrix-style.css" />
-<link rel="stylesheet" href="css/matrix-media.css" />
-<link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
-<link rel="stylesheet" href="css/jquery.gritter.css" />
+<link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+<link rel="stylesheet" th:href="@{css/bootstrap-responsive.min.css}" />
+<link rel="stylesheet" th:href="@{css/fullcalendar.css}" />
+<link rel="stylesheet" th:href="@{css/matrix-style.css}" />
+<link rel="stylesheet" th:href="@{css/matrix-media.css}" />
+<link th:href="@{font-awesome/css/font-awesome.css}" rel="stylesheet" />
+<link rel="stylesheet" th:href="@{css/jquery.gritter.css}" />
 <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
@@ -391,13 +391,13 @@
           <div class="widget-content tab-content">
             <div id="tab1" class="tab-pane active">
               <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment.</p>
-              <img src="img/demo/demo-image1.jpg" alt="demo-image"/></div>
-            <div id="tab2" class="tab-pane"> <img src="img/demo/demo-image2.jpg" alt="demo-image"/>
+              <img src="img/demo/demo-image1.jpg" alt="com.demo-image"/></div>
+            <div id="tab2" class="tab-pane"> <img src="img/demo/demo-image2.jpg" alt="com.demo-image"/>
               <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment.</p>
             </div>
             <div id="tab3" class="tab-pane">
               <p>And is full of waffle to It has multiple paragraphs and is full of waffle to pad out the comment. Usually, you just wish these sorts of comments would come to an end.multiple paragraphs and is full of waffle to pad out the comment. </p>
-              <img src="img/demo/demo-image3.jpg" alt="demo-image"/></div>
+              <img src="img/demo/demo-image3.jpg" alt="com.demo-image"/></div>
           </div>
         </div>
       </div>
@@ -415,27 +415,27 @@
 
 <!--end-Footer-part-->
 
-<script src="js/excanvas.min.js"></script> 
-<script src="js/jquery.min.js"></script> 
-<script src="js/jquery.ui.custom.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/jquery.flot.min.js"></script> 
-<script src="js/jquery.flot.resize.min.js"></script> 
-<script src="js/jquery.peity.min.js"></script> 
-<script src="js/fullcalendar.min.js"></script> 
-<script src="js/matrix.js"></script> 
-<script src="js/matrix.dashboard.js"></script> 
-<script src="js/jquery.gritter.min.js"></script> 
-<script src="js/matrix.interface.js"></script> 
-<script src="js/matrix.chat.js"></script> 
-<script src="js/jquery.validate.js"></script> 
-<script src="js/matrix.form_validation.js"></script> 
-<script src="js/jquery.wizard.js"></script> 
-<script src="js/jquery.uniform.js"></script> 
-<script src="js/select2.min.js"></script> 
-<script src="js/matrix.popover.js"></script> 
-<script src="js/jquery.dataTables.min.js"></script> 
-<script src="js/matrix.tables.js"></script> 
+<script th:src="@{js/excanvas.min.js}"></script>
+<script th:src="@{js/jquery.min.js}"></script>
+<script th:src="@{js/jquery.ui.custom.js}"></script>
+<script th:src="@{js/bootstrap.min.js}"></script>
+<script th:src="@{js/jquery.flot.min.js}"></script>
+<script th:src="@{js/jquery.flot.resize.min.js}"></script>
+<script th:src="@{js/jquery.peity.min.js}"></script>
+<script th:src="@{js/fullcalendar.min.js}"></script>
+<script th:src="@{js/matrix.js}"></script>
+<script th:src="@{js/matrix.dashboard.js}"></script>
+<script th:src="@{js/jquery.gritter.min.js}"></script>
+<script th:src="@{js/matrix.interface.js}"></script>
+<script th:src="@{js/matrix.chat.js}"></script>
+<script th:src="@{js/jquery.validate.js}"></script>
+<script th:src="@{js/matrix.form_validation.js}"></script>
+<script th:src="@{js/jquery.wizard.js}"></script>
+<script th:src="@{js/jquery.uniform.js}"></script>
+<script th:src="@{js/select2.min.js}"></script>
+<script th:src="@{js/matrix.popover.js}"></script>
+<script th:src="@{js/jquery.dataTables.min.js}"></script>
+<script th:src="@{js/matrix.tables.js}"></script>
 
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to

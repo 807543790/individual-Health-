@@ -16,5 +16,13 @@
         insert into health.user(login_name,password,gen_time) values (#{login_name},#{password},#{gen_time})
     </insert>
 
+    <select id="queryUser" resultType="user" >
+        select * from health.user where login_name = #{login_name}
+    </select>
+
+    <select id="queryUserPassword" resultType="String" >
+        select password from health.user where login_name = #{login_name}
+    </select>
+
 
 </mapper>

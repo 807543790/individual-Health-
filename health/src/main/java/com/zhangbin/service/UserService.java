@@ -18,4 +18,10 @@ public interface UserService {
 
     //添加用户
     int addUser(User user);
+
+    //登录验证功能
+    User queryUser(String login_name);
+
+    //登录验证密码功能
+    User queryUserPassword(String password);
 }
