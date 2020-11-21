@@ -48,19 +48,13 @@ public class ShiroConfig {
 
         //设置拦截：第一个参数为拦截的URL，第二个参数为拦截的用户权限，正常情况下，没有授权会跳转到未授权页面
         //登录注册页面无需认证即可访问
-        filterMap.put("user/login","anon");
-        filterMap.put("user/register","anon");
-        //主页面拦截，只有有权限为0的人才可以进入
-        filterMap.put("user/index","perms[0]");
-
-        //设置未授权页面
-        bean.setUnauthorizedUrl("/noauth");
+        filterMap.put("/user/index","perms[user:add]");
 
         //将设置权限MAP集合传入方法
         bean.setFilterChainDefinitionMap(filterMap);
 
         //设置登录页面
-        bean.setLoginUrl("/toLogin");
+        bean.setLoginUrl("/login");
 
         return bean;
 

@@ -30,7 +30,7 @@ public class UserRealm extends AuthorizingRealm {
         SimpleAuthorizationInfo info = new SimpleAuthorizationInfo();
 
         Subject subject = SecurityUtils.getSubject();
-//        在认证中获取User用户数据
+        //在认证中获取User用户数据
         User currentUser = (User) subject.getPrincipal();
         //根据用户ID查询权限
         Permission permission = service.queryPermissionById(currentUser.getId());

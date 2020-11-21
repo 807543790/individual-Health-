@@ -69,6 +69,18 @@
             <artifactId>shiro-spring</artifactId>
             <version>1.4.1</version>
         </dependency>
+        <!-- thymeleaf-整合shiro -->
+        <dependency>
+            <groupId>com.github.theborakompanioni</groupId>
+            <artifactId>thymeleaf-extras-shiro</artifactId>
+            <version>2.0.0</version>
+        </dependency>
+        <!--ShiRo-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>1.4.1</version>
+        </dependency>
         <!--thymeleaf-->
         <dependency>
             <groupId>org.thymeleaf</groupId>

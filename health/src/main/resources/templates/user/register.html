@@ -4,7 +4,14 @@
 <head>
     <title>登录页面</title><meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" th:href="@{css/bootstrap.min.css}" />
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <link rel="stylesheet" th:href="@{css/bootstrap-responsive.min.css}" />
     <link rel="stylesheet" th:href="@{css/matrix-login.css}" />
     <link th:href="@{font-awesome/css/font-awesome.css}" rel="stylesheet" />
@@ -16,17 +23,42 @@
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
-                    <span class="add-on bg_lg"><i class="icon-user"></i></span>
-                    <input type="text" placeholder="用户名" name="login_name" />
+                    <span class="add-on bg_lg" style="width: 13%"><i class="icon-user"></i></span>
+                    <input type="text"  required="required" placeholder="用户名" name="login_name" onkeyup="value=value.replace(/[/d]/g,'') "onbeforepaste="clipboardData.setData('text',clipboardData.getData('text').replace(/[/d]/g,''))" maxlength=20 />
+                    <p>最多只能输入20个字母或者汉字</p>
                 </div>
             </div>
-            <div th:text="${UserError}" class="btn btn-danger"></div>
+            <div th:text="${UserError}" class="btn btn-danger" style="display: none"></div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box ">
+                    <span class="add-on bg_lg" style="width: 13%"><i class="glyphicon glyphicon-link"></i></span>
+                    <input type="password" placeholder="密码" name="password"  required="required"/>
+                </div>
+            </div>
         </div>
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
-                    <span class="add-on bg_ly"><i class="icon-lock"></i></span>
-                    <input type="text" placeholder="密码" name="password" />
+                    <div class="add-on bg_ly" style="width: 13%"> <i class="glyphicon glyphicon-envelope"></i></div>
+                    <input type="text" placeholder="邮箱" name="email"/>
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_ly" style="width: 13%"><i class="glyphicon glyphicon-phone"></i></span>
+                    <input type="text" placeholder="手机号" name="mobile" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/>
+                </div>
+            </div>
+        </div>
+        <div class="control-group">
+            <div class="controls">
+                <div class="main_input_box">
+                    <span class="add-on bg_ly" style="width: 13%"><i class="glyphicon glyphicon-calendar"></i></span>
+                    <input type="date" placeholder="生日" name="birthday" />
                 </div>
             </div>
         </div>
@@ -38,5 +70,4 @@
 <script th:src="@{js/jquery.min.js}"></script>
 <script th:src="@{js/matrix.login.js}"></script>
 </body>
-
 </html>
