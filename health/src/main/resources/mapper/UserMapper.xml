@@ -11,9 +11,9 @@
     <select id="queryPermissionById" resultType="permission">
       select * from health.permission where userId = #{userId}
     </select>
-
+    <!--注册用户-->
     <insert id="addUser" parameterType="user">
-        insert into health.user(login_name,password,gen_time) values (#{login_name},#{password},#{gen_time})
+        insert into health.user(login_name,password,gen_time,email,mobile) values (#{login_name},#{password},#{gen_time},#{email},#{mobile})
     </insert>
 
     <select id="queryUser" resultType="user" >
