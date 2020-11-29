@@ -3,6 +3,7 @@ package com.zhangbin.service.impl;
 import com.zhangbin.mapper.UserMapper;
 import com.zhangbin.pojo.Permission;
 import com.zhangbin.pojo.User;
+import com.zhangbin.pojo.UserHealthDate;
 import com.zhangbin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -41,5 +42,15 @@ public class UserServiceImpl implements UserService {
     @Override
     public User queryUserPassword(String password) {
         return userMapper.queryUserPassword(password);
+    }
+
+    @Override
+    public int addUserHealthData(UserHealthDate userHealthDate) {
+        return userMapper.addUserHealthData(userHealthDate);
+    }
+
+    @Override
+    public int queryHealthDataById(String user_id) {
+        return userMapper.queryHealthDataById(user_id);
     }
 }

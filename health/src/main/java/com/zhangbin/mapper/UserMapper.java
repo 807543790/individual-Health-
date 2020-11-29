@@ -2,6 +2,7 @@ package com.zhangbin.mapper;
 
 import com.zhangbin.pojo.Permission;
 import com.zhangbin.pojo.User;
+import com.zhangbin.pojo.UserHealthDate;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
@@ -28,5 +29,11 @@ public interface UserMapper {
 
     //登录验证密码功能
     User queryUserPassword(String password);
+
+    //添加用户健康数据
+    int addUserHealthData(UserHealthDate userHealthDate);
+
+    //根据用户ID查询用户所有的健康数据
+    int queryHealthDataById(String  user_id);
 
 }

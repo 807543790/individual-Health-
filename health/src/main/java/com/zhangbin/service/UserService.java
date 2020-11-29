@@ -2,6 +2,7 @@ package com.zhangbin.service;
 
 import com.zhangbin.pojo.Permission;
 import com.zhangbin.pojo.User;
+import com.zhangbin.pojo.UserHealthDate;
 
 /**
  * 认认真真敲代码，开开心心每一天
@@ -24,4 +25,10 @@ public interface UserService {
 
     //登录验证密码功能
     User queryUserPassword(String password);
+
+    //添加用户健康数据
+    int addUserHealthData(UserHealthDate userHealthDate);
+
+    //根据用户ID查询用户所有的健康数据
+    int queryHealthDataById(String  user_id);
 }

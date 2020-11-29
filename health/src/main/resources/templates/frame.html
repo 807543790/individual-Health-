@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link rel="stylesheet" href="/css/bootstrap.css" />-->
-    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
     <link rel="stylesheet" href="/css/fullcalendar.css" />
     <link rel="stylesheet" href="/css/matrix-style.css" />
@@ -16,12 +16,10 @@
 </head>
 <body>
 <div th:fragment="home">
-<!--Header-part-->
+<!--logo展示-->
 <div id="header">
-    <h1><a href="dashboard.html">标题</a></h1>
+   <img src="img/zhangquandan.jpg" style="height: 60px;width: 60px">
 </div>
-<!--close-Header-part-->
-
 
 <!--标题栏-->
 <div id="user-nav" class="navbar navbar-inverse" >
@@ -57,7 +55,7 @@
     <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
 </div>
 <!--左侧功能模块-->
-<div id="sidebar"><a href="#" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
+<div id="sidebar">
     <ul>
         <li class="active"><a th:href="@{/index}"><i class="icon icon-home"></i> <span>个人主页</span></a> </li>
         <li> <a th:href="@{/charts}"><i class="icon icon-signal"></i> <span>健康数据</span></a> </li>
@@ -67,7 +65,7 @@
                 <span class="label label-important">3</span>
             </a>
         </li>
-        <li><a href="interface.html"><i class="icon icon-pencil"></i> <span>个人设置</span></a></li>
+        <li><a th:href="@{/toaddhealth}"><i class="icon icon-pencil"></i> <span>添加数据</span></a></li>
         <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>使用说明</span>
             <span class="label label-important">5</span></a>
             <ul>
