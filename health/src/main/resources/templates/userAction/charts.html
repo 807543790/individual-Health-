@@ -107,20 +107,19 @@
     //     }
     // });addhealthdata.html
     var ctx = document.getElementById('myChart').getContext('2d');
-    var val =new Array( [[${val}]]);
-    var dataval = new Array([[${dataval}]])
+
     var chart = new Chart(ctx, {
         // 要创建的图表类型
         type: 'line',
 
         // 数据集
         data: {
-            labels: dataval,
+            labels: [[${date}]],
             datasets: [{
-                label: "风湿因子",
+                label: "[[${title}]]",
                 backgroundColor: 'rgb(255, 99, 132)',
                 borderColor: 'rgb(255, 99, 132)',
-                data: val,
+                data: [[${value}]],
             }]
         },
 

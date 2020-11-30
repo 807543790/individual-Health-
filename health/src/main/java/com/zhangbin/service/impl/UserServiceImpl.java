@@ -50,7 +50,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public int queryHealthDataById(String user_id) {
+    public UserHealthDate queryHealthDataById(String user_id) {
         return userMapper.queryHealthDataById(user_id);
     }
 }

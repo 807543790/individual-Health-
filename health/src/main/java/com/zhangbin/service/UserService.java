@@ -30,5 +30,5 @@ public interface UserService {
     int addUserHealthData(UserHealthDate userHealthDate);
 
     //根据用户ID查询用户所有的健康数据
-    int queryHealthDataById(String  user_id);
+    UserHealthDate queryHealthDataById(String  user_id);
 }
