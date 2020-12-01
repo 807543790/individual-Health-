@@ -20,10 +20,9 @@
   <div id="content-header">
     <div id="breadcrumb"> <a th:href="@{/index}" title="返回首页" class="tip-bottom"><i class="icon-home"></i> 主页</a></div>
   </div>
-  <!--数据展示-->
-  <canvas id="popChart" width="200px" height="150px"></canvas>
 
-    <canvas id="myChart" ></canvas>
+  <!--数据展示-->
+  <canvas id="myChart" ></canvas>
 
 
 
@@ -31,6 +30,7 @@
 
 
 </div>
+
 <script src="/js/jquery.min.js"></script>
 <script src="/js/Chart.js"></script>
 <script src="/js/bootstrap.min.js"></script>
@@ -44,70 +44,8 @@
 </body>
 
 
-<script>
-    var popCanvas = document.getElementById("popChart").getContext("2d");
-    var barChart = new Chart(popCanvas, {
-        type: 'bar',
-        data: {
-            labels: ["中国", "印度", "美国", "印度尼西亚", "Brazil", "Pakistan", "Nigeria", "Bangladesh", "Russia", "Japan"],
-            datasets: [{
-                label: 'Population',
-                data: [1379302771, 1281935911, 326625791, 260580739, 207353391, 204924861, 190632261, 157826578, 142257519, 126451398],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)',
-                    'rgba(255, 159, 64, 0.6)',
-                    'rgba(255, 99, 132, 0.6)',
-                    'rgba(54, 162, 235, 0.6)',
-                    'rgba(255, 206, 86, 0.6)',
-                    'rgba(75, 192, 192, 0.6)',
-                    'rgba(153, 102, 255, 0.6)'
-                ]
-            }]
-        }
-    });
-    // var ctx = document.getElementById("myChart").getContext('2d');
-    // var myChart = new Chart(ctx, {
-    //     type: 'bar',
-    //     data: {
-    //         labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
-    //         datasets: [{
-    //             label: '# of Votes',
-    //             data: [12, 19, 3, 5, 2, 3],
-    //             backgroundColor: [
-    //                 'rgba(255, 99, 132, 0.2)',
-    //                 'rgba(54, 162, 235, 0.2)',
-    //                 'rgba(255, 206, 86, 0.2)',
-    //                 'rgba(75, 192, 192, 0.2)',
-    //                 'rgba(153, 102, 255, 0.2)',
-    //                 'rgba(255, 159, 64, 0.2)'
-    //             ],
-    //             borderColor: [
-    //                 'rgba(255,99,132,1)',
-    //                 'rgba(54, 162, 235, 1)',
-    //                 'rgba(255, 206, 86, 1)',
-    //                 'rgba(75, 192, 192, 1)',
-    //                 'rgba(153, 102, 255, 1)',
-    //                 'rgba(255, 159, 64, 1)'
-    //             ],
-    //             borderWidth: 1
-    //         }]
-    //     },
-    //     options: {
-    //         scales: {
-    //             yAxes: [{
-    //                 ticks: {
-    //                     beginAtZero:true
-    //                 }
-    //             }]
-    //         }
-    //     }
-    // });addhealthdata.html
+<script  th:inline="javascript">
     var ctx = document.getElementById('myChart').getContext('2d');
-
     var chart = new Chart(ctx, {
         // 要创建的图表类型
         type: 'line',
@@ -116,9 +54,9 @@
         data: {
             labels: [[${date}]],
             datasets: [{
-                label: "[[${title}]]",
-                backgroundColor: 'rgb(255, 99, 132)',
-                borderColor: 'rgb(255, 99, 132)',
+                label: [[${title}]],
+                backgroundColor: 'rgb(100,149,237)',
+                borderColor: 'rgb(100,149,237)',
                 data: [[${value}]],
             }]
         },

@@ -58,7 +58,6 @@ public class UserController {
     @PostMapping("/addUser")
     public String addUser(String login_name, String password, String email,String mobile,Model model){
         User username = userService.queryUser(login_name);
-        System.out.println("1");
         //判断用户是否存在
         if(username != null){
             //老用户
@@ -94,6 +93,8 @@ public class UserController {
             subject.login(token); //登录成功，跳转首页
             session.setAttribute("username",login_name);
             model.addAttribute("username",login_name);
+            session.setAttribute("id",user.getId());
+            session.setAttribute("username",user.getLogin_name());
             return "index";
         }catch (UnknownAccountException e){
             model.addAttribute("UserError","用户名或密码错误"); //登录失败，跳转登录页面

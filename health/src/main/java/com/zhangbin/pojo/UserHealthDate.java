@@ -14,7 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 //用户健康数据实体类
 public class UserHealthDate {
-    private String user_id;
+    private Integer user_id;
     private String parent_id;
     private String add_time;
     private String health_scope_min;

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpSession;
+
 /**
  * 认认真真敲代码，开开心心每一天
  *
@@ -21,7 +23,7 @@ public class BusinessController {
 
 //  添加用户健康数据
     @RequestMapping("/addHealthData")
-    public String addHealthData(String health_scope_min, String health_scope_max, @Param("health_name") String health_name, String remarks,
+    public String addHealthData(String health_scope_min, String health_scope_max, @Param("health_name") String health_name, String remarks, HttpSession session,
                                 String data_date1, String data_date2, String data_date3, String data_date4, String data_date5, String data_date6, String data_date7, String data_date8, String data_date9, String data_date10,
                                 String data_date11, String data_date12, String data_date13, String data_date14, String data_date15, String data_date16, String data_date17, String data_date18, String data_date19, String data_date20,
                                 String data_date21, String data_date22, String data_date23, String data_date24, String data_date25, String data_date26, String data_date27, String data_date28, String data_date29, String data_date30,
@@ -33,10 +35,6 @@ public class BusinessController {
                                 String data_value31, String data_value32, String data_value33, String data_value34, String data_value35, String data_value36, String data_value37, String data_value38, String data_value39, String data_value40,
                                 String data_value41, String data_value42, String data_value43, String data_value44, String data_value45, String data_value46, String data_value47, String data_value48, String data_value49, String data_value50
                       ){
-        System.out.println(health_name);
-        System.out.println(data_value1);
-        System.out.println(data_date1);
-        System.out.println(remarks);
         UserHealthDate userHealthDate = new UserHealthDate();
         userHealthDate.setHealth_scope_min(health_scope_min);
         userHealthDate.setHealth_scope_max(health_scope_max);
@@ -141,11 +139,12 @@ public class BusinessController {
         userHealthDate.setData_value48(data_value48);
         userHealthDate.setData_value49(data_value49);
         userHealthDate.setData_value50(data_value50);
-
+        userHealthDate.setUser_id((Integer) session.getAttribute("id"));
         userHealthDate.setRemarks(remarks);
         userService.addUserHealthData(userHealthDate);
 
-        return "userAction/addhealthdata";
+
+        return "userAction/charts";
     }
 
 

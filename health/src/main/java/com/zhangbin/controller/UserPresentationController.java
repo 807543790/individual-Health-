@@ -7,6 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 import java.util.ArrayList;
 
 /**
@@ -23,8 +25,10 @@ public class UserPresentationController {
 
     //  跳转健康数据页面
     @RequestMapping("/charts")
-    public String charts(Model model,String user_id){
-        UserHealthDate userHealthDate = userService.queryHealthDataById("1");
+    public String charts(Model model, String user_id, HttpServletRequest request , HttpSession session){
+
+        UserHealthDate userHealthDate = userService.queryHealthDataById((Integer)session.getAttribute("id"));
+        System.out.println(session.getAttribute("id"));
         ArrayList valueList = new ArrayList<>();
         valueList.add(userHealthDate.getData_value1());
         valueList.add(userHealthDate.getData_value2());
@@ -128,11 +132,9 @@ public class UserPresentationController {
         dateList.add(userHealthDate.getData_date48());
         dateList.add(userHealthDate.getData_date49());
         dateList.add(userHealthDate.getData_date50());
-        System.out.println(dateList.toString());
-        System.out.println(dateList.toString());
-        model.addAttribute("value",valueList);
-        model.addAttribute("date",dateList);
-        model.addAttribute("title",userHealthDate.getHealth_name());
+        request.setAttribute("value",valueList);
+        request.setAttribute("date",dateList);
+        request.setAttribute("title",userHealthDate.getHealth_name());
         System.out.println(userHealthDate.getData_date1());
         System.out.println(userHealthDate.getHealth_name());
         return "userAction/charts";

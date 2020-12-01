@@ -24,6 +24,8 @@
         select password from health.user where login_name = #{login_name}
     </select>
 
+
+
     <insert id="addUserHealthData" parameterType="userhealthdate">
         insert into health.permission(health_name,
         data_date1,data_date2,data_date3,data_date4,data_date5,data_date6,data_date7,data_date8,data_date9,data_date10,
@@ -36,7 +38,7 @@
         data_value21,data_value22,data_value23,data_value24,data_value25,data_value26,data_value27,data_value28,data_value29,data_value30,
         data_value31,data_value32,data_value33,data_value34,data_value35,data_value36,data_value37,data_value38,data_value39,data_value40,
         data_value41,data_value42,data_value43,data_value44,data_value45,data_value46,data_value47,data_value48,data_value49,data_value50,
-        health_scope_min,health_scope_max,remarks)
+        health_scope_min,health_scope_max,remarks,user_id)
   values (#{health_name},
         #{data_date1},#{data_date2},#{data_date3},#{data_date4},#{data_date5},#{data_date6},#{data_date7},#{data_date8},#{data_date9},#{data_date10},
         #{data_date11},#{data_date12},#{data_date13},#{data_date14},#{data_date15},#{data_date16},#{data_date17},#{data_date18},#{data_date19},#{data_date20},
@@ -48,11 +50,13 @@
         #{data_value21},#{data_value22},#{data_value23},#{data_value24},#{data_value25},#{data_value26},#{data_value27},#{data_value28},#{data_value29},#{data_value30},
         #{data_value31},#{data_value32},#{data_value33},#{data_value34},#{data_value35},#{data_value36},#{data_value37},#{data_value38},#{data_value39},#{data_value40},
         #{data_value41},#{data_value42},#{data_value43},#{data_value44},#{data_value45},#{data_value46},#{data_value47},#{data_value48},#{data_value49},#{data_value50},
-        #{health_scope_min},#{health_scope_max},#{remarks})
+        #{health_scope_min},#{health_scope_max},#{remarks},#{user_id})
     </insert>
 
    <select id="queryHealthDataById" resultType="UserHealthDate" >
-       select * from permission where user_id = #{user_id}
+       select * from permission where user_id = #{user_id};
    </select>
+
+
 
 </mapper>
