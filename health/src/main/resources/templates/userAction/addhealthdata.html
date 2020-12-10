@@ -42,6 +42,26 @@
               </div>
             </div>
             <div class="control-group">
+              <label class="control-label">颜色:</label>
+              <div class="controls">
+                <input type="color" class="span11" placeholder="请填写颜色" name="health_color" style="width: 20%"/>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">展示样式:</label>
+              <div class="controls">
+                <img src="img/折线图.png" style="width: 30%;height: 30%"><input type="radio" class="span11"  name="show_type" value="line" style="width: 10%">折线图<br>
+                <img src="img/柱状图.png" style="width: 30%;height: 30%"><input type="radio" class="span11"  name="show_type" value="bar" style="width: 10%" checked="checked" />柱状图
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">是否特别关注:</label>
+              <div class="controls">
+                <input type="radio" class="iscollect"  name="iscollect" value="yes" style="width: 10%">是
+                <input type="radio" class="iscollect"  name="iscollect" value="no" style="width: 10%" checked="checked" />否
+              </div>
+            </div>
+            <div class="control-group">
               <label class="control-label">正常值范围:</label>
               <div class="controls">
                 <input type="text" class="span11" placeholder="最高值" name="health_scope_max" style="width: 30%"/> -
