@@ -6,6 +6,8 @@ import com.zhangbin.pojo.UserHealthDate;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 /**
  * 认认真真敲代码，开开心心每一天
  *
@@ -34,6 +36,6 @@ public interface UserMapper {
     int addUserHealthData(UserHealthDate userHealthDate);
 
     //根据用户ID查询用户所有的健康数据
-    UserHealthDate queryHealthDataById(Integer  user_id);
+    List<UserHealthDate> queryHealthDataById(Integer  user_id);
 
 }

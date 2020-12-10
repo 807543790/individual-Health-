@@ -8,6 +8,8 @@ import com.zhangbin.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * 认认真真敲代码，开开心心每一天
  *
@@ -50,7 +52,7 @@ public class UserServiceImpl implements UserService {
     }
 
     @Override
-    public UserHealthDate queryHealthDataById(Integer user_id) {
+    public List<UserHealthDate> queryHealthDataById(Integer user_id) {
         return userMapper.queryHealthDataById(user_id);
     }
 }

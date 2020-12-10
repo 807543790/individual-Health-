@@ -23,7 +23,7 @@ public class BusinessController {
 
 //  添加用户健康数据
     @RequestMapping("/addHealthData")
-    public String addHealthData(String health_scope_min, String health_scope_max, @Param("health_name") String health_name, String remarks, HttpSession session,
+    public String addHealthData(String health_scope_min, String health_scope_max, @Param("health_name") String health_name, String remarks, HttpSession session,String health_color,String show_type,String iscollect,
                                 String data_date1, String data_date2, String data_date3, String data_date4, String data_date5, String data_date6, String data_date7, String data_date8, String data_date9, String data_date10,
                                 String data_date11, String data_date12, String data_date13, String data_date14, String data_date15, String data_date16, String data_date17, String data_date18, String data_date19, String data_date20,
                                 String data_date21, String data_date22, String data_date23, String data_date24, String data_date25, String data_date26, String data_date27, String data_date28, String data_date29, String data_date30,
@@ -139,8 +139,12 @@ public class BusinessController {
         userHealthDate.setData_value48(data_value48);
         userHealthDate.setData_value49(data_value49);
         userHealthDate.setData_value50(data_value50);
+        userHealthDate.setHealth_color(health_color);
+        System.out.println(health_color);
         userHealthDate.setUser_id((Integer) session.getAttribute("id"));
         userHealthDate.setRemarks(remarks);
+        userHealthDate.setShow_type(show_type);
+        userHealthDate.setIscollect(iscollect);
         userService.addUserHealthData(userHealthDate);
 
 
@@ -152,7 +156,7 @@ public class BusinessController {
     //  跳转至添加健康数据
     @RequestMapping("/toaddhealth")
     public String toaddhealth( ){
-        return "userAction/addhealthdata";
+        return "addhealthdata";
     }
 
 

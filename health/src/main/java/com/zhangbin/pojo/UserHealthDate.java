@@ -14,6 +14,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 //用户健康数据实体类
 public class UserHealthDate {
+    private Integer id;
     private Integer user_id;
     private String parent_id;
     private String add_time;
@@ -21,6 +22,9 @@ public class UserHealthDate {
     private String health_scope_max;
     private String health_name;
     private String remarks;
+    private String health_color;
+    private String show_type;
+    private String iscollect;
 
     private String data_date1;
     private String data_date2;

@@ -40,6 +40,7 @@ public class ShiroConfig {
         //设置需要认证的网址
         filterMap.put("/index","authc");
         filterMap.put("/","authc");
+        filterMap.put("/charts","authc");
         //将设置权限MAP集合传入方法
         bean.setFilterChainDefinitionMap(filterMap);
 
