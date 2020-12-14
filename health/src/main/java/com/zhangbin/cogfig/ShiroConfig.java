@@ -41,6 +41,7 @@ public class ShiroConfig {
         filterMap.put("/index","authc");
         filterMap.put("/","authc");
         filterMap.put("/charts","authc");
+        filterMap.put("/updateHealth","authc");
         //将设置权限MAP集合传入方法
         bean.setFilterChainDefinitionMap(filterMap);
 

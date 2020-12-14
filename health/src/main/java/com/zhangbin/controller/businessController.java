@@ -156,7 +156,7 @@ public class BusinessController {
     //  跳转至添加健康数据
     @RequestMapping("/toaddhealth")
     public String toaddhealth( ){
-        return "addhealthdata";
+        return "userAction/addhealthdata";
     }
 
 

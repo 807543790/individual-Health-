@@ -57,6 +57,10 @@
        select * from permission where user_id = #{user_id};
    </select>
 
+   <select id="querySpecialFocusById" resultType="UserHealthDate" >
+       select * from permission where user_id = #{user_id} and iscollect = 'yes';
+   </select>
+
 
 
 </mapper>

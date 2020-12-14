@@ -19,35 +19,16 @@
   <div id="content-header">
     <div id="breadcrumb"> <a th:href="@{/index}" title="返回首页" class="tip-bottom"><i class="icon-home"></i> 主页</a></div>
   </div>
-
-  <!--数据展示-->
+  <div class="alert alert-warning" role="alert" style="text-align: center;font-size: 25px">健 康 数 据</div>
+    <!--数据展示-->
   <div id="InputOne">
 
   </div>
-
-
-
-
-
-
-
-
 </div>
 
 <script src="/js/jquery.min.js"></script>
-<script src="/js/Chart.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.flot.min.js"></script>
-<script src="/js/jquery.flot.pie.min.js"></script>
-<script src="/js/matrix.charts.js"></script>
-<script src="/js/jquery.flot.resize.min.js"></script>
-<script src="/js/matrix.js"></script>
-<script src="/js/jquery.peity.min.js"></script>
-<script src="/js/matrix.dashboard.js"></script>
 <script src="/js/echarts.js"></script>
 </body>
-
-
 <script  th:inline="javascript">
         var i =0;
         if([[${datelist0}]] != null){

@@ -31,6 +31,16 @@ public interface UserService {
     //添加用户健康数据
     int addUserHealthData(UserHealthDate userHealthDate);
 
+    //修改用户数据
+    int updateUserHealthData(UserHealthDate userHealthDate);
+
     //根据用户ID查询用户所有的健康数据
     List<UserHealthDate> queryHealthDataById(Integer  user_id);
+
+    //根据健康数据ID查询
+    UserHealthDate queryUserHealthDataById(Integer  id);
+
+    //根据用户ID查询特别关注数据
+    List<UserHealthDate> querySpecialFocusById(Integer  user_id);
+
 }

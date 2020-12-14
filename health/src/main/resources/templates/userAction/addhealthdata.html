@@ -90,7 +90,7 @@
       </div>
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>Form Elements</h5>
+          <h5>添加日记</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="#" method="get" class="form-horizontal">
@@ -251,57 +251,24 @@
     <div class="span6">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>Form Elements</h5>
+          <h5>个人日记</h5>
         </div>
         <div class="widget-content nopadding">
           <form action="#" class="form-horizontal">
             <div class="control-group">
-              <label for="normal" class="control-label">Phone field</label>
+              <label for="normal" class="control-label">标题</label>
               <div class="controls">
                 <input type="text" id="mask-phone" class="span8 mask text">
-                <span class="help-block blue span8">(999) 999-9999</span> </div>
+                <span class="help-block blue span8">文章的标题，最多不能超过50个字</span> </div>
             </div>
             <div class="control-group">
-              <label for="normal" class="control-label">Phone field + ext.</label>
+              <label for="normal" class="control-label">内容</label>
               <div class="controls">
-                <input type="text" id="mask-phoneExt" class="span8 mask text">
-                <span class="help-block blue span8">(999) 999-9999? x99999</span> </div>
+                <textarea class="textarea_editor span12" rows="6" placeholder="Enter text ..."></textarea>
+                <span class="help-block blue span8">今天的心情怎么样？</span> </div>
             </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Phone field + ext.</label>
-              <div class="controls">
-                <input type="text" id="mask-phoneInt" class="span8 mask text">
-                <span class="help-block blue span8">+40 999 999 999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Date field</label>
-              <div class="controls">
-                <input type="text" id="mask-date" class="span8 mask text">
-                <span class="help-block blue span8">99/99/9999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">SSN field</label>
-              <div class="controls">
-                <input type="text" id="mask-ssn" class="span8 mask text">
-                <span class="help-block blue span8">999-99-9999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Product Key</label>
-              <div class="controls">
-                <input type="text" id="mask-productKey" class="span8 mask text">
-                <span class="help-block blue span8">a*-999-a999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Eye Script</label>
-              <div class="controls">
-                <input type="text" id="mask-eyeScript" class="span8 mask text">
-                <span class="help-block blue span8">~9.99 ~9.99 999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Percent</label>
-              <div class="controls">
-                <input type="text" id="mask-percent" class="span8 mask text">
-                <span class="help-block blue span8">99%</span> </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-success">保存</button>
             </div>
           </form>
         </div>
@@ -438,19 +405,7 @@
 </div>
 <!--end-Footer-part--> 
 <script src="js/jquery.min.js"></script> 
-<script src="js/jquery.ui.custom.js"></script> 
-<script src="js/bootstrap.min.js"></script> 
-<script src="js/bootstrap-colorpicker.js"></script> 
-<script src="js/bootstrap-datepicker.js"></script> 
-<script src="js/jquery.toggle.buttons.html"></script> 
-<script src="js/masked.js"></script> 
-<script src="js/jquery.uniform.js"></script> 
-<script src="js/select2.min.js"></script> 
-<script src="js/matrix.js"></script> 
-<script src="js/matrix.form_common.js"></script> 
-<script src="js/wysihtml5-0.3.0.js"></script> 
-<script src="js/jquery.peity.min.js"></script> 
-<script src="js/bootstrap-wysihtml5.js"></script>
+
 
 <script type="text/javascript">
     //添加多个数据按钮
@@ -470,13 +425,6 @@
 
 
     }
-
-
-
 </script>
-<script>
-	$('.textarea_editor').wysihtml5();
-</script>
-
 </body>
 </html>

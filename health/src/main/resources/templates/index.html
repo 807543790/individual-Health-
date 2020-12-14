@@ -4,7 +4,6 @@
 <title>个人健康管理中心</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!--<link rel="stylesheet" href="/css/bootstrap.css" />-->
 <link rel="stylesheet" href="/css/bootstrap.min.css" />
 <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
 <link rel="stylesheet" href="/css/fullcalendar.css" />
@@ -27,14 +26,13 @@
   <div class="container-fluid">
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
-        <li class="bg_lb"> <a href="index.html"> <i class="icon-dashboard"></i> <span class="label label-important">20</span>所有健康数据</a> </li>
-        <li class="bg_lg span3"> <a href="userAction/charts.html"> <i class="icon-signal"></i> 特别关注</a> </li>
+        <li class="bg_lb"> <a th:href="@{/charts}"> <i class="icon-dashboard"></i> <span class="label label-important">20</span>健康数据</a> </li>
+        <li class="bg_lg span3"> <a th:href="@{/specialfocus}"> <i class="icon-star"></i> 特别关注</a> </li>
         <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> 消息通知 </a> </li>
-        <li class="bg_lo"> <a href="tables.html"> <i class="icon-th"></i> 功能大全</a> </li>
-        <li class="bg_ls"> <a href="grid.html"> <i class="icon-fullscreen"></i> 全屏</a> </li>
-        <li class="bg_lo span3"> <a href="userAction/addhealthdata.html"> <i class="icon-th-list"></i> 健康表单</a> </li>
-        <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i> 超标数据</a> </li>
-        <li class="bg_lb"> <a href="interface.html"> <i class="icon-pencil"></i>个人记录</a> </li>
+        <li class="bg_lo span3"> <a href="tables.html"> <i class="icon-cog"></i> 个人中心</a> </li>
+        <li class="bg_lo span3"> <a href="userAction/addhealthdata.html"> <i class="icon icon-file"></i>使用说明</a> </li>
+        <li class="bg_ls"> <a href="buttons.html"> <i class="icon-tint"></i><span class="label label-success">101</span>健康预警</a> </li>
+        <li class="bg_lb"> <a th:href="@{/toaddhealth}"> <i class="icon-pencil"></i>添加数据</a> </li>
         <li class="bg_lg"> <a href="calendar.html"> <i class="icon-calendar"></i> 日历</a> </li>
         <li class="bg_lr"> <a href="error404.html"> <i class="icon-info-sign"></i> 错误信息</a> </li>
 
@@ -45,75 +43,114 @@
     <div class="row-fluid">
       <div class="widget-box">
         <div class="widget-title bg_lg"><span class="icon"><i class="icon-signal"></i></span>
-          <h5>统计数据</h5>
+          <h5>最新添加的健康数据</h5>
         </div>
-        <div class="widget-content" >
-          <div class="row-fluid">
-            <div class="span9">
-              <div class="chart"></div>
-            </div>
-            <div class="span3">
-              <ul class="site-stats">
-                <li class="bg_lh"><i class="icon-user"></i> <strong>2540</strong> <small>Total Users</small></li>
-                <li class="bg_lh"><i class="icon-plus"></i> <strong>120</strong> <small>New Users </small></li>
-                <li class="bg_lh"><i class="icon-shopping-cart"></i> <strong>656</strong> <small>Total Shop</small></li>
-                <li class="bg_lh"><i class="icon-tag"></i> <strong>9540</strong> <small>Total Orders</small></li>
-                <li class="bg_lh"><i class="icon-repeat"></i> <strong>10</strong> <small>Pending Orders</small></li>
-                <li class="bg_lh"><i class="icon-globe"></i> <strong>8540</strong> <small>Online Orders</small></li>
-              </ul>
-            </div>
+        <!--数据展示-->
+        <div id="main">
+          <div id="InputOne" style='height: 295px;width:100%' >
+
           </div>
         </div>
       </div>
     </div>
-
-
-
-<script src="/js/excanvas.min.js"></script>
-<script src="/js/jquery.min.js"></script>
-<script src="/js/jquery.ui.custom.js"></script>
-<script src="/js/bootstrap.min.js"></script>
-<script src="/js/jquery.flot.min.js"></script>
-<script src="/js/jquery.flot.resize.min.js"></script>
-<script src="/js/jquery.peity.min.js"></script>
-<script src="/js/fullcalendar.min.js"></script>
-<script src="/js/matrix.js"></script>
-<script src="/js/matrix.dashboard.js"></script>
-<script src="/js/jquery.gritter.min.js"></script>
-<script src="/js/matrix.interface.js"></script>
-<script src="/js/matrix.chat.js"></script>
-<script src="/js/jquery.validate.js"></script>
-<script src="/js/matrix.form_validation.js"></script>
-<script src="/js/jquery.wizard.js"></script>
-<script src="/js/jquery.uniform.js"></script>
-<script src="/js/select2.min.js"></script>
-<script src="/js/matrix.popover.js"></script>
-<script src="/js/jquery.dataTables.min.js"></script>
-<script src="/js/matrix.tables.js"></script>
-
-<script type="text/javascript">
-  // This function is called from the pop-up menus to transfer to
-  // a different page. Ignore if the value returned is a null string:
-  function goPage (newURL) {
-
-      // if url is empty, skip the menu dividers and reset the menu selection to default
-      if (newURL != "") {
-      
-          // if url is "-", it is this page -- reset the menu:
-          if (newURL == "-" ) {
-              resetMenu();            
-          } 
-          // else, send page to designated URL            
-          else {  
-            document.location.href = newURL;
-          }
-      }
-  }
-
-// resets the menu selection upon entry to this page:
-function resetMenu() {
-   document.gomenu.selector.selectedIndex = 2;
-}
-</script>
+  </div>
+</div>
 </body>
+<script src="js/excanvas.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ui.custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flot.min.js"></script>
+<script src="js/jquery.flot.resize.min.js"></script>
+<script src="js/jquery.peity.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/matrix.dashboard.js"></script>
+<script src="js/jquery.gritter.min.js"></script>
+<script src="js/matrix.interface.js"></script>
+<script src="js/matrix.chat.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/matrix.form_validation.js"></script>
+<script src="js/jquery.wizard.js"></script>
+<script src="js/jquery.uniform.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/matrix.popover.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/matrix.tables.js"></script>
+<script src="/js/echarts.js"></script>
+<script  th:inline="javascript">
+        var myChart = echarts.init(document.getElementById("InputOne"));
+        var option = {
+            title: {
+                text: '1'
+            },
+            color:'#8080ff',
+            tooltip: {
+                trigger: 'axis',
+                axisPointer: {            // 坐标轴指示器，坐标轴触发有效
+                    type: 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                }
+            },
+            grid: {
+                left: '3%',
+                right: '4%',
+                bottom: '3%',
+                containLabel: true
+            },
+            xAxis: [
+                {
+                    type: 'category',
+                    data: "1",
+                    axisTick: {
+                        alignWithLabel: true
+                    }
+                }
+            ],
+            yAxis: [
+                {
+                    type: 'value'
+                }
+            ],
+            legend: {
+
+            },
+            series: [
+                {
+                    name: "测试",
+                    type: 'line',
+                    barWidth: '60%',
+                    data: '1'
+                }
+            ]
+        };
+
+
+        myChart.setOption(option);
+
+
+</script>
+<script type="text/javascript">
+    // This function is called from the pop-up menus to transfer to
+    // a different page. Ignore if the value returned is a null string:
+    function goPage (newURL) {
+
+        // if url is empty, skip the menu dividers and reset the menu selection to default
+        if (newURL != "") {
+
+            // if url is "-", it is this page -- reset the menu:
+            if (newURL == "-" ) {
+                resetMenu();
+            }
+            // else, send page to designated URL
+            else {
+                document.location.href = newURL;
+            }
+        }
+    }
+
+    // resets the menu selection upon entry to this page:
+    function resetMenu() {
+        document.gomenu.selector.selectedIndex = 2;
+    }
+</script>
 </html>

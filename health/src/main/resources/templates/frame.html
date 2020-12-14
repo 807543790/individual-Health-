@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link rel="stylesheet" href="/css/bootstrap.css" />-->
     <link rel="stylesheet" href="/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
     <link rel="stylesheet" href="/css/fullcalendar.css" />
     <link rel="stylesheet" href="/css/matrix-style.css" />
@@ -15,39 +16,42 @@
     <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
+
 <div th:fragment="home">
 <!--logo展示-->
 <div id="header">
-   <img src="img/zhangquandan.jpg" style="height: 60px;width: 60px">
+    <img src="img/zhangquandan.jpg" style="height: 55px;width: 55px;margin-left: 1%;margin-top: 0.8%" class="img-circle" align="middle" >
+    <span>&nbsp;&nbsp;<a href="#" style="color: #f1fff8;" ><b style="font-size: 15px">欢迎您:&nbsp;&nbsp;[[${session.username}]]</b></a></span>
 </div>
 
 <!--标题栏-->
 <div id="user-nav" class="navbar navbar-inverse" >
-    <ul class="nav">
-        <li  class="dropdown" id="profile-messages" ><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">个人中心</span><b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                <li><a href="#"><i class="icon-user"></i>个人信息</a></li>
-                <li class="divider"></li>
-                <li><a href="#"><i class="icon-check"></i>修改密码</a></li>
-                <li class="divider"></li>
-                <li><a th:href="@{/logout}"><i class="icon-key"></i>退出登录</a></li>
-            </ul>
-        </li>
-        <li class="dropdown" id="menu-messages"><a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle"><i class="icon icon-envelope"></i> <span class="text">消息中心</span> <span class="label label-important">5</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-                <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i>通知消息</a></li>
-                <li class="divider"></li>
-                <li><a class="sInbox" title="" href="#"><i class="icon-envelope"></i>健康预警</a></li>
-                <li class="divider"></li>
-                <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i>邮箱</a></li>
-                <li class="divider"></li>
-                <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i> trash</a></li>
-            </ul>
-        </li>
-        <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">设置</span></a></li>
-        <li class=""><a th:href="@{/logout}"><i class="icon icon-share-alt"></i> <span class="text">退出登录</span></a></li>
-        <li class=""><a href="#" style="color: #13b4ff">欢迎您:&nbsp;&nbsp;<span th:text="${username}" class="text"></span></a></li>
-    </ul>
+   <!--个人中心按钮-->
+    <div class="btn-group">
+        <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            个人中心 <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">编辑个人信息</a></li>
+            <li><a href="#">邮箱</a></li>
+            <li><a href="#">消息通知</a></li>
+            <li role="separator" class="divider"></li>
+
+            <li><a th:href="@{/logout}">退出登录</a></li>
+        </ul>
+    </div>
+    <!--邮箱-->
+    <div class="btn-group">
+        <a th:href="@{/logout}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-envelope"></span>我的邮箱</a><span class="glyphicon glyphicon-envelope"></span>
+    </div>
+    <!--个人日记-->
+    <div class="btn-group">
+        <a th:href="@{/logout}" class="btn btn-primary" role="button"><span class="glyphicon glyphicon-envelope"></span>我的日记</a><span class="glyphicon glyphicon-envelope"></span>
+    </div>
+<!--退出登录-->
+    <div class="btn-group">
+        <a th:href="@{/logout}" class="btn btn-default btn-lg disabled"role="button">退出登录</a>
+    </div>
 </div>
 <!--搜索框-->
 <div id="search">
@@ -58,10 +62,10 @@
 <div id="sidebar">
     <ul>
         <li class="active"><a th:href="@{/index}"><i class="icon icon-home"></i> <span>个人主页</span></a> </li>
-        <li> <a th:href="@{/charts}"><i class="icon icon-signal"></i> <span>健康数据</span></a> </li>
-        <li> <a th:href="@{/specialfocus}"><i class="icon icon-th"></i> <span>特别关注</span></a></li>
+        <li> <a th:href="@{/charts}"><i class="icon-dashboard"></i> <span>健康数据</span></a> </li>
+        <li> <a th:href="@{/specialfocus}"><i class="icon-star"></i> <span>特别关注</span></a></li>
         <li class="submenu">
-            <a href="#"><i class="icon icon-th-list"></i> <span>预警数据</span>
+            <a href="#"><i class="icon-tint"></i> <span>健康预警</span>
                 <span class="label label-important">3</span>
             </a>
         </li>

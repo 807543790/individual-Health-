@@ -26,408 +26,235 @@
     <div id="breadcrumb"> <a th:href="@{/index}" title="返回首页" class="tip-bottom"><i class="icon-home"></i> 主页</a></div>
   </div>
 <div class="container-fluid">
-  <hr>
   <div class="row-fluid">
-    <div class="span6">
+    <div class="span12">
       <div class="widget-box">
         <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>添加健康数据</h5>
+          <h5>修改健康数据</h5>
         </div>
         <div class="widget-content nopadding">
           <form th:action="@{/addHealthData}" method="post" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">名称:</label>
               <div class="controls">
-                <input type="text" class="span11" placeholder="请填写数据名称" name="health_name"/>
+                <input type="text" class="span11" placeholder="请填写数据名称" name="health_name" th:value="${user.getHealth_name()}"/>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">颜色:</label>
               <div class="controls">
-                <input type="color" class="span11" placeholder="请填写颜色" name="health_color" style="width: 10%"/>
+                <input type="color" class="span11" placeholder="请填写颜色" name="health_color" style="width: 13%" th:value="${user.getHealth_color()}"/>
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">展示样式:</label>
               <div class="controls">
-                <img src="img/折线图.png" style="width: 30%;height: 30%"><input type="radio" class="span11"  name="show_type" value="bar" style="width: 10%">折线图<br>
-                <img src="img/柱状图.png" style="width: 30%;height: 30%"><input type="radio" class="span11"  name="show_type" value="line" style="width: 10%" checked="checked" />柱状图
+                <img src="img/折线图.png" style="width: 30%;height: 30%"><input type="radio" class="span11"  name="show_type" th:value="line" style="width: 10%" th:checked="${user.getShow_type()=='line'}">折线图<br>
+                <img src="img/柱状图.png" style="width: 30%;height: 30%"><input type="radio" class="span11"  name="show_type" th:value="bar" style="width: 10%"  th:checked="${user.getShow_type()=='bar'}"/>柱状图
               </div>
             </div>
             <div class="control-group">
               <label class="control-label">正常值范围:</label>
               <div class="controls">
-                <input type="text" class="span11" placeholder="最高值" name="health_scope_max" style="width: 30%"/> -
-                <input type="text" class="span11" placeholder="最低值" name="health_scope_min" style="width: 30%"/>
+                <input type="text" class="span11" placeholder="最高值" name="health_scope_max" style="width: 30%" th:value="${user.getHealth_scope_max()}"/> -
+                <input type="text" class="span11" placeholder="最低值" name="health_scope_min" style="width: 30%" th:value="${user.getHealth_scope_min()}"/>
               </div>
             </div>
             <!--按钮实现添加数据-->
             <div id="InputOne" style="text-align: center">
-            </div>
-            <div class="control-group">
-              <div class="controls">
-                <input  class="btn btn-primary" onclick="addData()" value="添加数据"/>
-              </div>
+              <label class='control-label'>第1条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date1' style='width: 30%' th:value="${user.getData_date1()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value1' style='width: 30%' th:value="${user.getData_value1()}"/><br><hr>
+              <label class='control-label'>第2条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date2' style='width: 30%' th:value="${user.getData_date2()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value2' style='width: 30%' th:value="${user.getData_value2()}"/><br><hr>
+              <label class='control-label'>第3条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date3' style='width: 30%' th:value="${user.getData_date3()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value3' style='width: 30%' th:value="${user.getData_value3()}"/><br><hr>
+              <label class='control-label'>第4条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date4' style='width: 30%' th:value="${user.getData_date4()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value4' style='width: 30%' th:value="${user.getData_value4()}"/><br><hr>
+              <label class='control-label'>第5条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date5' style='width: 30%' th:value="${user.getData_date5()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value5' style='width: 30%' th:value="${user.getData_value5()}"/><br><hr>
+              <label class='control-label'>第6条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date6' style='width: 30%' th:value="${user.getData_date6()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value6' style='width: 30%' th:value="${user.getData_value6()}"/><br><hr>
+              <label class='control-label'>第7条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date7' style='width: 30%' th:value="${user.getData_date7()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value7' style='width: 30%' th:value="${user.getData_value7()}"/><br><hr>
+              <label class='control-label'>第8条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date8' style='width: 30%' th:value="${user.getData_date8()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value8' style='width: 30%' th:value="${user.getData_value8()}"/><br><hr>
+              <label class='control-label'>第9条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date9' style='width: 30%' th:value="${user.getData_date9()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value9' style='width: 30%' th:value="${user.getData_value9()}"/><br><hr>
+              <label class='control-label'>第11条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date11' style='width: 30%' th:value="${user.getData_date11()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value11' style='width: 30%' th:value="${user.getData_value11()}"/><br><hr>
+              <label class='control-label'>第12条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date12' style='width: 30%' th:value="${user.getData_date12()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value12' style='width: 30%' th:value="${user.getData_value12()}"/><br><hr>
+              <label class='control-label'>第13条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date13' style='width: 30%' th:value="${user.getData_date13()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value13' style='width: 30%' th:value="${user.getData_value13()}"/><br><hr>
+              <label class='control-label'>第14条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date14' style='width: 30%' th:value="${user.getData_date14()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value14' style='width: 30%' th:value="${user.getData_value14()}"/><br><hr>
+              <label class='control-label'>第15条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date15' style='width: 30%' th:value="${user.getData_date15()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value15' style='width: 30%' th:value="${user.getData_value15()}"/><br><hr>
+              <label class='control-label'>第16条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date16' style='width: 30%' th:value="${user.getData_date16()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value16' style='width: 30%' th:value="${user.getData_value16()}"/><br><hr>
+              <label class='control-label'>第17条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date17' style='width: 30%' th:value="${user.getData_date17()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value17' style='width: 30%' th:value="${user.getData_value17()}"/><br><hr>
+              <label class='control-label'>第18条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date18' style='width: 30%' th:value="${user.getData_date18()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value18' style='width: 30%' th:value="${user.getData_value18()}"/><br><hr>
+              <label class='control-label'>第19条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date19' style='width: 30%' th:value="${user.getData_date19()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value19' style='width: 30%' th:value="${user.getData_value19()}"/><br><hr>
+              <label class='control-label'>第20条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date20' style='width: 30%' th:value="${user.getData_date20()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value20' style='width: 30%' th:value="${user.getData_value20()}"/><br><hr>
+              <label class='control-label'>第21条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date21' style='width: 30%' th:value="${user.getData_date21()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value21' style='width: 30%' th:value="${user.getData_value21()}"/><br><hr>
+
+              <label class='control-label'>第22条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date22' style='width: 30%' th:value="${user.getData_date22()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value22' style='width: 30%' th:value="${user.getData_value22()}"/><br><hr>
+
+              <label class='control-label'>第23条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date23' style='width: 30%' th:value="${user.getData_date23()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value23' style='width: 30%' th:value="${user.getData_value23()}"/><br><hr>
+
+              <label class='control-label'>第24条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date24' style='width: 30%' th:value="${user.getData_date24()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value24' style='width: 30%' th:value="${user.getData_value24()}"/><br><hr>
+
+              <label class='control-label'>第25条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date25' style='width: 30%' th:value="${user.getData_date25()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value25' style='width: 30%' th:value="${user.getData_value25()}"/><br><hr>
+
+              <label class='control-label'>第26条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date26' style='width: 30%' th:value="${user.getData_date26()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value26' style='width: 30%' th:value="${user.getData_value26()}"/><br><hr>
+
+              <label class='control-label'>第27条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date27' style='width: 30%' th:value="${user.getData_date27()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value27' style='width: 30%' th:value="${user.getData_value27()}"/><br><hr>
+
+              <label class='control-label'>第28条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date28' style='width: 30%' th:value="${user.getData_date28()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value28' style='width: 30%' th:value="${user.getData_value28()}"/><br><hr>
+
+              <label class='control-label'>第29条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date29' style='width: 30%' th:value="${user.getData_date29()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value29' style='width: 30%' th:value="${user.getData_value29()}"/><br><hr>
+
+              <label class='control-label'>第30条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date30' style='width: 30%' th:value="${user.getData_date30()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value30' style='width: 30%' th:value="${user.getData_value30()}"/><br><hr>
+
+              <label class='control-label'>第31条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date31' style='width: 30%' th:value="${user.getData_date31()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value31' style='width: 30%' th:value="${user.getData_value31()}"/><br><hr>
+
+              <label class='control-label'>第32条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date32' style='width: 30%' th:value="${user.getData_date32()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value32' style='width: 30%' th:value="${user.getData_value32()}"/><br><hr>
+
+              <label class='control-label'>第33条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date33' style='width: 30%' th:value="${user.getData_date33()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value33' style='width: 30%' th:value="${user.getData_value33()}"/><br><hr>
+
+              <label class='control-label'>第条34数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date34' style='width: 30%' th:value="${user.getData_date34()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value34' style='width: 30%' th:value="${user.getData_value34()}"/><br><hr>
+
+              <label class='control-label'>第35条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date35' style='width: 30%' th:value="${user.getData_date35()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value35' style='width: 30%' th:value="${user.getData_value35()}"/><br><hr>
+
+              <label class='control-label'>第36条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date36' style='width: 30%' th:value="${user.getData_date36()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value36' style='width: 30%' th:value="${user.getData_value36()}"/><br><hr>
+
+              <label class='control-label'>第37条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date37' style='width: 30%' th:value="${user.getData_date37()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value37' style='width: 30%' th:value="${user.getData_value37()}"/><br><hr>
+
+              <label class='control-label'>第38条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date38' style='width: 30%' th:value="${user.getData_date38()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value38' style='width: 30%' th:value="${user.getData_value38()}"/><br><hr>
+
+              <label class='control-label'>第39条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date39' style='width: 30%' th:value="${user.getData_date39()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value39' style='width: 30%' th:value="${user.getData_value39()}"/><br><hr>
+
+              <label class='control-label'>第40条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date40' style='width: 30%' th:value="${user.getData_date40()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value40' style='width: 30%' th:value="${user.getData_value40()}"/><br><hr>
+
+              <label class='control-label'>第41条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date41' style='width: 30%' th:value="${user.getData_date41()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value41' style='width: 30%' th:value="${user.getData_value41()}"/><br><hr>
+
+              <label class='control-label'>第42条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date42' style='width: 30%' th:value="${user.getData_date42()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value42' style='width: 30%' th:value="${user.getData_value42()}"/><br><hr>
+
+              <label class='control-label'>第43条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date43' style='width: 30%' th:value="${user.getData_date43()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value43' style='width: 30%' th:value="${user.getData_value43()}"/><br><hr>
+
+              <label class='control-label'>第44条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date44' style='width: 30%' th:value="${user.getData_date44()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value44' style='width: 30%' th:value="${user.getData_value44()}"/><br><hr>
+
+              <label class='control-label'>第45条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date45' style='width: 30%' th:value="${user.getData_date45()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value45' style='width: 30%' th:value="${user.getData_value45()}"/><br><hr>
+
+              <label class='control-label'>第46条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date46' style='width: 30%' th:value="${user.getData_date46()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value46' style='width: 30%' th:value="${user.getData_value46()}"/><br><hr>
+
+              <label class='control-label'>第47条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date47' style='width: 30%' th:value="${user.getData_date47()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value47' style='width: 30%' th:value="${user.getData_value47()}"/><br><hr>
+
+              <label class='control-label'>第48条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date48' style='width: 30%' th:value="${user.getData_date48()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value48' style='width: 30%' th:value="${user.getData_value48()}"/><br><hr>
+
+              <label class='control-label'>第49条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date49' style='width: 30%' th:value="${user.getData_date49()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value49' style='width: 30%' th:value="${user.getData_value49()}"/><br><hr>
+
+              <label class='control-label'>第50条数据</label>
+              日期: <input type='date'  class='dataDate' name='data_date50' style='width: 30%' th:value="${user.getData_date50()}"/><br>
+              数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value50' style='width: 30%' th:value="${user.getData_value50()}"/><br><hr>
+
             </div>
             <div class="control-group">
               <label class="control-label">备注</label>
               <div class="controls">
-                <textarea class="span11" name="remarks"></textarea>
+                <textarea class="span11" name="remarks"  th:value="${user.getRemarks()}"></textarea>
               </div>
             </div>
             <div class="form-actions">
-              <button type="submit" class="btn btn-success">保存</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>Form Elements</h5>
-        </div>
-        <div class="widget-content nopadding">
-          <form action="#" method="get" class="form-horizontal">
-            <div class="control-group">
-              <label class="control-label">Select input</label>
-              <div class="controls">
-                <select >
-                  <option>First option</option>
-                  <option>Second option</option>
-                  <option>Third option</option>
-                  <option>Fourth option</option>
-                  <option>Fifth option</option>
-                  <option>Sixth option</option>
-                  <option>Seventh option</option>
-                  <option>Eighth option</option>
-                </select>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Multiple Select input</label>
-              <div class="controls">
-                <select multiple >
-                  <option>First option</option>
-                  <option selected>Second option</option>
-                  <option>Third option</option>
-                  <option>Fourth option</option>
-                  <option>Fifth option</option>
-                  <option>Sixth option</option>
-                  <option>Seventh option</option>
-                  <option>Eighth option</option>
-                </select>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Radio inputs</label>
-              <div class="controls">
-                <label>
-                  <input type="radio" name="radios" />
-                  First One</label>
-                <label>
-                  <input type="radio" name="radios" />
-                  Second One</label>
-                <label>
-                  <input type="radio" name="radios" />
-                  Third One</label>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Checkboxes</label>
-              <div class="controls">
-                <label>
-                  <input type="checkbox" name="radios" />
-                  First One</label>
-                <label>
-                  <input type="checkbox" name="radios" />
-                  Second One</label>
-                <label>
-                  <input type="checkbox" name="radios" />
-                  Third One</label>
-              </div>
-            </div>
-            <div class="control-group">
-              <label for="checkboxes" class="control-label">Data Toggle checkbox</label>
-              <div class="controls">
-                <div data-toggle="buttons-checkbox" class="btn-group">
-                  <button class="btn btn-primary" type="button">Left</button>
-                  <button class="btn btn-primary" type="button">Middle</button>
-                  <button class="btn btn-primary" type="button">Right</button>
-                </div>
-              </div>
-            </div>
-            <div class="control-group">
-              <label for="checkboxes" class="control-label">Data Radio button</label>
-              <div class="controls">
-                <div data-toggle="buttons-radio" class="btn-group">
-                  <button class="btn btn-primary" type="button">Left</button>
-                  <button class="btn btn-primary" type="button">Middle</button>
-                  <button class="btn btn-primary" type="button">Right</button>
-                </div>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">File upload input</label>
-              <div class="controls">
-                <input type="file" />
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Disabled Input</label>
-              <div class="controls">
-                <input type="text" placeholder="You can't type anything…" disabled="" class="span11">
-              </div>
-            </div>
-            <div class="form-actions">
-              <button type="submit" class="btn btn-success">Save</button>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>Form Elements</h5>
-        </div>
-        <div class="widget-content nopadding">
-          <form class="form-horizontal">
-            <div class="control-group">
-              <label class="control-label">Color picker (hex)</label>
-              <div class="controls">
-                <input type="text" data-color="#ffffff" value="#ffffff" class="colorpicker input-big span11">
-                <span class="help-block">Color picker with Formate of  (hex)</span> </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Color picker (rgba)</label>
-              <div class="controls">
-                <input type="text" data-color="rgba(344,232,53,0.5)" value="rgba(344,232,53,0.5)" data-color-format="rgba" class="colorpicker span11">
-                <span class="help-block">Color picker with Formate of  (rgba)</span> </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Date picker (dd-mm)</label>
-              <div class="controls">
-                <input type="text" data-date="01-02-2013" data-date-format="dd-mm-yyyy" value="01-02-2013" class="datepicker span11">
-                <span class="help-block">Date with Formate of  (dd-mm-yy)</span> </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Date Picker (mm-dd)</label>
-              <div class="controls">
-                <div  data-date="12-02-2012" class="input-append date datepicker">
-                  <input type="text" value="12-02-2012"  data-date-format="mm-dd-yyyy" class="span11" >
-                  <span class="add-on"><i class="icon-th"></i></span> </div>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Color Picker (rgb)</label>
-              <div class="controls">
-                <div data-color-format="rgb" data-color="rgb(155, 142, 180)" class="input-append color colorpicker colorpicker-rgb">
-                  <input type="text" value="rgb(155, 142, 180)" class="span11">
-                  <span class="add-on"><i style="background-color: rgb(155, 142, 180)"></i></span> </div>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Color Picker (hex)</label>
-              <div class="controls">
-                <div data-color-format="hex" data-color="#000000"  class="input-append color colorpicker">
-                  <input type="text" value="#000000" class="span11">
-                  <span class="add-on"><i style="background-color: #000000"></i></span> </div>
-              </div>
-            </div>
-            <div class="form-actions">
-              <button type="submit" class="btn btn-success">Save</button>
-              <button type="submit" class="btn btn-primary">Reset</button>
-              <button type="submit" class="btn btn-info">Edit</button>
-              <button type="submit" class="btn btn-danger">Cancel</button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
-    <div class="span6">
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>Form Elements</h5>
-        </div>
-        <div class="widget-content nopadding">
-          <form action="#" class="form-horizontal">
-            <div class="control-group">
-              <label for="normal" class="control-label">Phone field</label>
-              <div class="controls">
-                <input type="text" id="mask-phone" class="span8 mask text">
-                <span class="help-block blue span8">(999) 999-9999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Phone field + ext.</label>
-              <div class="controls">
-                <input type="text" id="mask-phoneExt" class="span8 mask text">
-                <span class="help-block blue span8">(999) 999-9999? x99999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Phone field + ext.</label>
-              <div class="controls">
-                <input type="text" id="mask-phoneInt" class="span8 mask text">
-                <span class="help-block blue span8">+40 999 999 999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Date field</label>
-              <div class="controls">
-                <input type="text" id="mask-date" class="span8 mask text">
-                <span class="help-block blue span8">99/99/9999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">SSN field</label>
-              <div class="controls">
-                <input type="text" id="mask-ssn" class="span8 mask text">
-                <span class="help-block blue span8">999-99-9999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Product Key</label>
-              <div class="controls">
-                <input type="text" id="mask-productKey" class="span8 mask text">
-                <span class="help-block blue span8">a*-999-a999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Eye Script</label>
-              <div class="controls">
-                <input type="text" id="mask-eyeScript" class="span8 mask text">
-                <span class="help-block blue span8">~9.99 ~9.99 999</span> </div>
-            </div>
-            <div class="control-group">
-              <label for="normal" class="control-label">Percent</label>
-              <div class="controls">
-                <input type="text" id="mask-percent" class="span8 mask text">
-                <span class="help-block blue span8">99%</span> </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>Form Elements</h5>
-        </div>
-        <div class="widget-content nopadding">
-          <form class="form-horizontal">
-            <div class="control-group">
-              <label class="control-label">Tooltip Input</label>
-              <div class="controls">
-                <input type="text" placeholder="Hover for tooltip…" data-title="A tooltip for the input" class="span11 tip" data-original-title="">
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Type ahead Input</label>
-              <div class="controls">
-                <input type="text" placeholder="Type here for auto complete…" style="margin: 0 auto;" data-provide="typeahead" data-items="4" data-source="[&quot;Alabama&quot;,&quot;Alaska&quot;,&quot;Arizona&quot;,&quot;Arkansas&quot;,&quot;California&quot;,&quot;Colorado&quot;,&quot;Ahmedabad&quot;,&quot;India&quot;,&quot;Florida&quot;,&quot;Georgia&quot;,&quot;Hawaii&quot;,&quot;Idaho&quot;,&quot;Illinois&quot;,&quot;Indiana&quot;,&quot;Iowa&quot;,&quot;Kansas&quot;,&quot;Kentucky&quot;,&quot;Louisiana&quot;,&quot;Maine&quot;,&quot;Maryland&quot;,&quot;Massachusetts&quot;,&quot;Michigan&quot;,&quot;Minnesota&quot;,&quot;Mississippi&quot;,&quot;Missouri&quot;,&quot;Montana&quot;,&quot;Nebraska&quot;,&quot;Nevada&quot;,&quot;New Hampshire&quot;,&quot;New Jersey&quot;,&quot;New Mexico&quot;,&quot;New York&quot;,&quot;North Dakota&quot;,&quot;North Carolina&quot;,&quot;Ohio&quot;,&quot;Oklahoma&quot;,&quot;Oregon&quot;,&quot;Pennsylvania&quot;,&quot;Rhode Island&quot;,&quot;South Carolina&quot;,&quot;South Dakota&quot;,&quot;Tennessee&quot;,&quot;Texas&quot;,&quot;Utah&quot;,&quot;Vermont&quot;,&quot;Virginia&quot;,&quot;Washington&quot;,&quot;West Virginia&quot;,&quot;Wisconsin&quot;,&quot;Wyoming&quot;]" class="span11">
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Prepended Input</label>
-              <div class="controls">
-                <div class="input-prepend"> <span class="add-on">#</span>
-                  <input type="text" placeholder="prepend" class="span11">
-                </div>
-              </div>
-            </div>
-            <div class="control-group">
-              <label class="control-label">Appended Input</label>
-              <div class="controls">
-                <div class="input-append">
-                  <input type="text" placeholder="5.000" class="span11">
-                  <span class="add-on">$</span> </div>
-              </div>
-            </div>
-            <div class="control-group warning">
-              <label class="control-label" for="inputWarning">Input with warning</label>
-              <div class="controls">
-                <input type="text" id="inputWarning" class="span11">
-                <span class="help-inline">Something may have gone wrong</span> </div>
-            </div>
-            <div class="control-group error">
-              <label class="control-label" for="inputError">Input with error</label>
-              <div class="controls">
-                <input type="text" id="inputError" class="span11">
-                <span class="help-inline">Please correct the error</span> </div>
-            </div>
-            <div class="control-group info">
-              <label class="control-label" for="inputInfo">Input with info</label>
-              <div class="controls">
-                <input type="text" id="inputInfo" class="span11">
-                <span class="help-inline">Username is already taken</span> </div>
-            </div>
-            <div class="control-group success">
-              <label class="control-label" for="inputSuccess">Input with success</label>
-              <div class="controls">
-                <input type="text" id="inputSuccess" class="span11">
-                <span class="help-inline">Woohoo!</span> </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="widget-box">
-        <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-          <h5>Form Layout</h5>
-        </div>
-        <div class="widget-content">
-          <div class="controls">
-            <input type="text" placeholder=".span12" class="span12 m-wrap">
-          </div>
-          <div class="controls controls-row">
-            <input type="text" placeholder=".span11" class="span11 m-wrap">
-            <input type="text" placeholder=".span1" class="span1 m-wrap">
-          </div>
-          <div class="controls controls-row">
-            <input type="text" placeholder=".span10" class="span10 m-wrap">
-            <input type="text" placeholder=".span2" class="span2 m-wrap">
-          </div>
-          <div class="controls controls-row">
-            <input type="text" placeholder=".span9" class="span9 m-wrap">
-            <input type="text" placeholder=".span3" class="span3 m-wrap">
-          </div>
-          <div class="controls controls-row">
-            <input type="text" placeholder=".span8" class="span8 m-wrap">
-            <input type="text" placeholder=".span4" class="span4 m-wrap">
-          </div>
-          <div class="controls controls-row">
-            <input type="text" placeholder=".span7" class="span7 m-wrap">
-            <input type="text" placeholder=".span5" class="span5 m-wrap">
-          </div>
-          <div class="controls controls-row">
-            <input type="text" placeholder=".span6" class="span6 m-wrap">
-            <input type="text" placeholder=".span6" class="span6 m-wrap">
-          </div>
-          <div class="controls controls-row">
-            <input type="text" placeholder=".span5" class="span5 m-wrap">
-            <input type="text" placeholder=".span7" class="span7 m-wrap">
-          </div>
-         
-          <div class="controls controls-row">
-            <input type="text" placeholder=".span2" class="span2 m-wrap">
-            <input type="text" placeholder=".span3" class="span3 m-wrap">
-            <input type="text" placeholder=".span4" class="span4 m-wrap">
-            <input type="text" placeholder=".span1" class="span2 m-wrap">
-            <input type="text" placeholder=".span1" class="span1 m-wrap">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="row-fluid">
-    <div class="widget-box">
-      <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-        <h5>wysihtml5</h5>
-      </div>
-      <div class="widget-content">
-        <div class="control-group">
-          <form>
-            <div class="controls">
-              <textarea class="textarea_editor span12" rows="6" placeholder="Enter text ..."></textarea>
+              <button type="submit" class="btn btn-success">确认修改</button>
             </div>
           </form>
         </div>
       </div>
     </div>
   </div>
-</div></div>
-<!--Footer-part-->
-<div class="row-fluid">
-  <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in/">Themedesigner.in</a> </div>
+</div>
 </div>
 <!--end-Footer-part--> 
 <script src="js/jquery.min.js"></script> 
@@ -442,34 +269,9 @@
 <script src="js/matrix.js"></script> 
 <script src="js/matrix.form_common.js"></script> 
 <script src="js/wysihtml5-0.3.0.js"></script> 
-<script src="js/jquery.peity.min.js"></script> 
-<script src="js/bootstrap-wysihtml5.js"></script>
-
-<script type="text/javascript">
-    //添加多个数据按钮
-    var i =1;
-    function addData(){
-            if(i >= 51){
-                alert("最多只能添加五十条数据");
-            }else {
-                var label = "<label class='control-label'>第" + i + "条数据</label>";
-                var dataDate = "日期: <input type='date'  class='dataDate' name='data_date"+i+"' style='width: 30%' /><br>";
-                var dataValue = "数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value"+i+"' style='width: 30%' /><br><hr>";
-                $("#InputOne").append(label);
-                $("#InputOne").append(dataDate);
-                $("#InputOne").append(dataValue);
-                i++;
-            }
-
-
-    }
-
-
-
-</script>
+<script src="js/jquery.peity.min.js"></script>
 <script>
 	$('.textarea_editor').wysihtml5();
 </script>
-
 </body>
 </html>

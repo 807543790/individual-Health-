@@ -38,4 +38,7 @@ public interface UserMapper {
     //根据用户ID查询用户所有的健康数据
     List<UserHealthDate> queryHealthDataById(Integer  user_id);
 
+    //根据用户ID查询特别关注数据
+    List<UserHealthDate> querySpecialFocusById(Integer  user_id);
+
 }

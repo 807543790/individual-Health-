@@ -2,12 +2,50 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.zhangbin.mapper.UserMapper">
+<mapper namespace="com.zhangbin.mapper.UserOperation">
 
-    <select id="queryHealthDataById" resultType="UserHealthDate" >
-       select * from permission where user_id = #{user_id};
-   </select>
+    <select id="queryUserHealthDataById" resultType="UserHealthDate">
+        select * from permission where id = #{id};
+    </select>
 
+    <update id="updateUserHealthData" parameterType="userhealthdate">
+    update health.permission set  health_name=#{health_name},
+        data_date1=#{data_date1},data_date2=#{data_date2},data_date3=#{data_date3},data_date4=#{data_date4},data_date5=#{data_date5},
+        data_date6=#{data_date6},data_date7=#{data_date7},data_date8=#{data_date8},data_date9=#{data_date9},data_date10=#{data_date10},
+        data_date11=#{data_date11},data_date12=#{data_date12},data_date13=#{data_date13},data_date14=#{data_date14},data_date15=#{data_date15},
+        data_date16=#{data_date16},data_date17=#{data_date17},data_date18=#{data_date18},data_date19=#{data_date19},data_date20=#{data_date20},
+        data_date21=#{data_date21},data_date22=#{data_date22},data_date23=#{data_date23},data_date24=#{data_date24},data_date25=#{data_date25},
+        data_date26=#{data_date26},data_date27=#{data_date27},data_date28=#{data_date28},data_date29=#{data_date29},data_date30=#{data_date30},
+        data_date31=#{data_date31},data_date32=#{data_date32},data_date33=#{data_date33},data_date34=#{data_date34},data_date35=#{data_date35},
+        data_date36=#{data_date36},data_date37=#{data_date37},data_date38=#{data_date38},data_date39=#{data_date39},data_date40=#{data_date40},
+        data_date41=#{data_date41},data_date42=#{data_date42},data_date43=,data_date44=,data_date45=,
+        data_date46=,data_date47=,data_date48=,data_date49=,data_date50=,
+        #{data_date41},#{data_date42},#{data_date43},#{data_date44},#{data_date45},#{data_date46},#{data_date47},#{data_date48},#{data_date49},#{data_date50}
+        data_value1=,data_value2=,data_value3=,data_value4=,data_value5=
+        data_value6=,data_value7=,data_value8=,data_value9=,data_value10=,
+        data_value11=,data_value12=,data_value13=,data_value14=,data_value15=,
+        data_value16=,data_value17=,data_value18=,data_value19=,data_value20=,
+        data_value21=,data_value22=,data_value23=,data_value24=,data_value25=,
+        data_value26=,data_value27=,data_value28=,data_value29=,data_value30=,
+        data_value31=,data_value32=,data_value33=,data_value34=,data_value35=,
+        data_value36=,data_value37=,data_value38=,data_value39=,data_value40=,
+        data_value41=,data_value42=,data_value43=,data_value44=,data_value45=,
+        data_value46=,data_value47=,data_value48=,data_value49=,data_value50=,
+        health_scope_min=,health_scope_max=,remarks=,health_color=,show_type=,
+        iscollect=
+        where id = #{id}
 
+        #{data_date1},#{data_date2},#{data_date3},#{data_date4},#{data_date5},#{data_date6},#{data_date7},#{data_date8},#{data_date9},#{data_date10},
+        #{data_date11},#{data_date12},#{data_date13},#{data_date14},#{data_date15},#{data_date16},#{data_date17},#{data_date18},#{data_date19},#{data_date20},
+        #{data_date21},#{data_date22},#{data_date23},#{data_date24},#{data_date25},#{data_date26},#{data_date27},#{data_date28},#{data_date29},#{data_date30},
+        #{data_date31},#{data_date32},#{data_date33},#{data_date34},#{data_date35},#{data_date36},#{data_date37},#{data_date38},#{data_date39},#{data_date40},
+        #{data_date41},#{data_date42},#{data_date43},#{data_date44},#{data_date45},#{data_date46},#{data_date47},#{data_date48},#{data_date49},#{data_date50},
+        #{data_value1},#{data_value2},#{data_value3},#{data_value4},#{data_value5},#{data_value6},#{data_value7},#{data_value8},#{data_value9},#{data_value10},
+        #{data_value11},#{data_value12},#{data_value13},#{data_value14},#{data_value15},#{data_value16},#{data_value17},#{data_value18},#{data_value19},#{data_value20},
+        #{data_value21},#{data_value22},#{data_value23},#{data_value24},#{data_value25},#{data_value26},#{data_value27},#{data_value28},#{data_value29},#{data_value30},
+        #{data_value31},#{data_value32},#{data_value33},#{data_value34},#{data_value35},#{data_value36},#{data_value37},#{data_value38},#{data_value39},#{data_value40},
+        #{data_value41},#{data_value42},#{data_value43},#{data_value44},#{data_value45},#{data_value46},#{data_value47},#{data_value48},#{data_value49},#{data_value50},
+        #{health_scope_min},#{health_scope_max},#{remarks},#{user_id},#{health_color},#{show_type},#{iscollect})
+    </update>
 
 </mapper>

@@ -1,6 +1,7 @@
 package com.zhangbin.service.impl;
 
 import com.zhangbin.mapper.UserMapper;
+import com.zhangbin.mapper.UserOperation;
 import com.zhangbin.pojo.Permission;
 import com.zhangbin.pojo.User;
 import com.zhangbin.pojo.UserHealthDate;
@@ -19,6 +20,9 @@ import java.util.List;
 public class UserServiceImpl implements UserService {
     @Autowired
     UserMapper userMapper;
+
+    @Autowired
+    UserOperation userOperation;
 
     //根据用户名查询用户
     @Override
@@ -54,5 +58,20 @@ public class UserServiceImpl implements UserService {
     @Override
     public List<UserHealthDate> queryHealthDataById(Integer user_id) {
         return userMapper.queryHealthDataById(user_id);
+    }
+
+    @Override
+    public UserHealthDate queryUserHealthDataById(Integer id) {
+        return userOperation.queryUserHealthDataById(id);
+    }
+
+    @Override
+    public List<UserHealthDate> querySpecialFocusById(Integer user_id) {
+        return userMapper.querySpecialFocusById(user_id);
+    }
+
+    @Override
+    public int updateUserHealthData(UserHealthDate userHealthDate) {
+        return userOperation.updateUserHealthData(userHealthDate);
     }
 }
