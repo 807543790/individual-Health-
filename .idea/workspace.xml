@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88ee3186-ad87-428e-b658-f164b8269d99" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/health/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -143,7 +144,7 @@
           <entry key="html" value="10164" />
           <entry key="java" value="7857" />
           <entry key="txt" value="158" />
-          <entry key="xml" value="1038" />
+          <entry key="xml" value="1039" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
@@ -155,7 +156,7 @@
           <entry key="PLAIN_TEXT" value="182" />
           <entry key="SQL" value="62" />
           <entry key="ThymeleafExpressions" value="1" />
-          <entry key="XML" value="976" />
+          <entry key="XML" value="977" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -217,23 +218,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
               <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -331,7 +320,6 @@
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/UserService.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserOperation.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/TeatPC2.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/StacticProxy.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/TeatPC2.java" />
@@ -346,6 +334,7 @@
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/index.html" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/addhealthdata.html" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/updateHealthData.html" />
+        <option value="$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml" />
       </list>
     </option>
   </component>
@@ -380,7 +369,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2868" />
     <option name="y" value="168" />
     <option name="width" value="1940" />
@@ -593,7 +582,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608002636731" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608002843329" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="E:/blogs" />
@@ -739,7 +728,7 @@
       <workItem from="1607865365214" duration="5242000" />
       <workItem from="1607918868141" duration="5487000" />
       <workItem from="1607953564560" duration="6203000" />
-      <workItem from="1608001481423" duration="1027000" />
+      <workItem from="1608001481423" duration="1291000" />
     </task>
     <task id="LOCAL-00001" summary="实现login跳转和注册功能">
       <created>1604328979842</created>
@@ -836,7 +825,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182582000" />
+    <option name="totallyTimeSpent" value="182846000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1206,13 +1195,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -1230,6 +1212,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
         </state>
       </provider>
     </entry>

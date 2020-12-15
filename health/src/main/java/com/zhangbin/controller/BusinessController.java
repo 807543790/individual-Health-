@@ -156,6 +156,7 @@ public class BusinessController {
     //  跳转至添加健康数据
     @RequestMapping("/toaddhealth")
     public String toaddhealth( ){
+        System.out.println("跳转");
         return "userAction/addhealthdata";
     }
 
