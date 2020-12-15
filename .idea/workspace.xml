@@ -229,8 +229,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-37">
-              <caret line="140" column="53" lean-forward="true" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
+            <state relative-caret-position="221">
+              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -593,7 +593,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608002207274" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608002225276" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="E:/blogs" />
@@ -739,7 +739,7 @@
       <workItem from="1607865365214" duration="5242000" />
       <workItem from="1607918868141" duration="5487000" />
       <workItem from="1607953564560" duration="6203000" />
-      <workItem from="1608001481423" duration="517000" />
+      <workItem from="1608001481423" duration="1027000" />
     </task>
     <task id="LOCAL-00001" summary="实现login跳转和注册功能">
       <created>1604328979842</created>
@@ -836,7 +836,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182072000" />
+    <option name="totallyTimeSpent" value="182582000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1225,8 +1225,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-37">
-          <caret line="140" column="53" lean-forward="true" selection-start-line="140" selection-start-column="53" selection-end-line="140" selection-end-column="53" />
+        <state relative-caret-position="221">
+          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
