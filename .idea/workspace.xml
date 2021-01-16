@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88ee3186-ad87-428e-b658-f164b8269d99" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/health/src/main/resources/templates/user/personal.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserPresentationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserPresentationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/userOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/userOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/UserHealthDate.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/UserHealthDate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/java/com/zhangbin/utils/UserDatapresentation.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/resources/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/resources/templates/frame.html" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/resources/templates/frame.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/resources/templates/userAction/addhealthdata.html" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/resources/templates/userAction/addhealthdata.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health/src/main/resources/templates/userAction/updateHealthData.html" beforeDir="false" afterPath="$PROJECT_DIR$/health/src/main/resources/templates/userAction/updateHealthData.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/health/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -76,32 +94,33 @@
     <session id="804170880">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="17" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="1" />
-          <entry key="project.open.time.11" value="4" />
+          <entry key="project.open.time.11" value="5" />
           <entry key="project.open.time.12" value="3" />
-          <entry key="project.open.time.13" value="2" />
+          <entry key="project.open.time.13" value="4" />
           <entry key="project.open.time.14" value="3" />
-          <entry key="project.open.time.15" value="7" />
-          <entry key="project.open.time.16" value="2" />
+          <entry key="project.open.time.15" value="9" />
+          <entry key="project.open.time.16" value="4" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="2" />
           <entry key="project.open.time.20" value="1" />
+          <entry key="project.open.time.21" value="1" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.9" value="2" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.opened" value="41" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="7" />
           <entry key="css" value="14" />
-          <entry key="html" value="80" />
-          <entry key="java" value="109" />
+          <entry key="html" value="92" />
+          <entry key="java" value="142" />
           <entry key="jpg" value="1" />
           <entry key="js" value="4" />
           <entry key="md" value="1" />
@@ -113,7 +132,7 @@
           <entry key="sql" value="2" />
           <entry key="user" value="1" />
           <entry key="userOperation" value="1" />
-          <entry key="xml" value="19" />
+          <entry key="xml" value="24" />
           <entry key="yml" value="4" />
         </counts>
       </usages-collector>
@@ -123,9 +142,9 @@
           <entry key="CSS" value="14" />
           <entry key="Database Element" value="1" />
           <entry key="Eclipse" value="2" />
-          <entry key="HTML" value="80" />
+          <entry key="HTML" value="92" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="107" />
+          <entry key="JAVA" value="140" />
           <entry key="JavaScript" value="4" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="3" />
@@ -133,7 +152,7 @@
           <entry key="RNG Compact" value="1" />
           <entry key="SCSS" value="1" />
           <entry key="Scratch" value="2" />
-          <entry key="XML" value="19" />
+          <entry key="XML" value="24" />
           <entry key="YAML" value="4" />
         </counts>
       </usages-collector>
@@ -141,22 +160,22 @@
         <counts>
           <entry key="css" value="7" />
           <entry key="dummy" value="24" />
-          <entry key="html" value="10164" />
-          <entry key="java" value="7857" />
+          <entry key="html" value="11108" />
+          <entry key="java" value="9863" />
           <entry key="txt" value="158" />
-          <entry key="xml" value="1039" />
+          <entry key="xml" value="1336" />
           <entry key="yml" value="31" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CSS" value="7" />
-          <entry key="HTML" value="10163" />
-          <entry key="JAVA" value="7857" />
+          <entry key="HTML" value="11107" />
+          <entry key="JAVA" value="9863" />
           <entry key="PLAIN_TEXT" value="182" />
-          <entry key="SQL" value="62" />
+          <entry key="SQL" value="74" />
           <entry key="ThymeleafExpressions" value="1" />
-          <entry key="XML" value="977" />
+          <entry key="XML" value="1262" />
           <entry key="YAML" value="31" />
         </counts>
       </usages-collector>
@@ -165,76 +184,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/frame.html">
+        <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="704">
-              <caret line="44" column="124" selection-start-line="44" selection-start-column="124" selection-end-line="44" selection-end-column="124" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/user/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="19" column="93" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="93" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="784">
-              <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/addhealthdata.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4272">
-              <caret line="267" column="61" selection-start-line="267" selection-start-column="61" selection-end-line="267" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/updateHealthData.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="45" column="107" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="107" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#1;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#1;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="912">
+              <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml">
+        <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserPresentationController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="34" column="204" selection-start-line="34" selection-start-column="171" selection-end-line="34" selection-end-column="204" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="27" column="28" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -278,6 +240,9 @@
       <find>dataDate</find>
       <find>main</find>
       <find>wysihtml5</find>
+      <find>health_scope_max</find>
+      <find>addHealthData</find>
+      <find>health_name</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -287,14 +252,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/helloController.java" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/register.html" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/indexController.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/permission.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/Permission.java" />
         <option value="$PROJECT_DIR$/health/src/main/resources/static/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/User.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/UserRealm.java" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/user/register.html" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/charts.html" />
@@ -305,21 +268,11 @@
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/businessController.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserPresentation.java" />
         <option value="$PROJECT_DIR$/health/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/health/pom.xml" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/UserHealthDate.java" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/addHealthData.html" />
         <option value="$PROJECT_DIR$/health/src/main/resources/mapper/userOperation.xml" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/utils/UserDatapresentation.java" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/health/src/main/resources/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/user/login.html" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/user/index.html" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserPresentationController.java" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/UserService.java" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserOperation.java" />
-        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/TeatPC2.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/StacticProxy.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/TeatPC2.java" />
@@ -328,13 +281,28 @@
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/test.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/jiekou.java" />
         <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/specialfocus.html" />
-        <option value="$PROJECT_DIR$/health/src/main/resources/templates/frame.html" />
-        <option value="$PROJECT_DIR$/health/src/main/resources/templates/index.html" />
-        <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/addhealthdata.html" />
         <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/updateHealthData.html" />
+        <option value="$PROJECT_DIR$/health/src/main/resources/templates/frame.html" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/Test06.java" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserOperation.java" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/User.java" />
+        <option value="$PROJECT_DIR$/health/src/main/resources/templates/user/personal.html" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/UserService.java" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/demo.java" />
+        <option value="$PROJECT_DIR$/health/pom.xml" />
+        <option value="$PROJECT_DIR$/health/src/main/resources/templates/index.html" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/Test.java" />
+        <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/addhealthdata.html" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/UserHealthDate.java" />
         <option value="$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml" />
+        <option value="$PROJECT_DIR$/health/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java" />
+        <option value="$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserPresentationController.java" />
+        <option value="$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html" />
       </list>
     </option>
   </component>
@@ -370,10 +338,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="2868" />
-    <option name="y" value="168" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2586" />
+    <option name="height" value="1546" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -381,6 +349,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -464,52 +433,7 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="zhangbin" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="individual-Health-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="individual-Health-" type="462c0819:PsiDirectoryNode" />
-              <item name="health" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhangbin" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="individual-Health-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="individual-Health-" type="462c0819:PsiDirectoryNode" />
-              <item name="health" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhangbin" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="individual-Health-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="individual-Health-" type="462c0819:PsiDirectoryNode" />
-              <item name="health" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhangbin" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="individual-Health-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="individual-Health-" type="462c0819:PsiDirectoryNode" />
-              <item name="health" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zhangbin" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="individual-Health-" type="b2602c69:ProjectViewProjectNode" />
@@ -554,23 +478,12 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="individual-Health-" type="b2602c69:ProjectViewProjectNode" />
-              <item name="individual-Health-" type="462c0819:PsiDirectoryNode" />
-              <item name="health" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="userAction" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -582,7 +495,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1608002843329" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1609070191633" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="E:/blogs" />
@@ -599,11 +512,11 @@
       <recent name="com" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\individual-Health-\health\src\main\java\com\zhangbin\cogfig" />
+      <recent name="E:\individual-Health-\health\src\main\resources\templates\user" />
       <recent name="E:\individual-Health-\health\src\main\resources\static\js" />
       <recent name="E:\individual-Health-\health\src\main\java\com\zhangbin\demo" />
-      <recent name="E:\individual-Health-\health\src\main\java\com\zhangbin\cogfig" />
       <recent name="E:\individual-Health-\health\src\main\java\com\zhangbin\mapper" />
-      <recent name="E:\individual-Health-\health\src\main\resources\templates\userAction" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\individual-Health-\health\src\main\resources\static\css" />
@@ -626,8 +539,8 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.HealthApplication">
-    <configuration name="StacticProxy" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhangbin.cogfig.StacticProxy" />
+    <configuration name="TeatPC2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhangbin.cogfig.TeatPC2" />
       <module name="health" />
       <extension name="coverage">
         <pattern>
@@ -639,8 +552,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeatPC2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.zhangbin.cogfig.TeatPC2" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhangbin.cogfig.Test" />
+      <module name="health" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhangbin.cogfig.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test06" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.zhangbin.cogfig.Test06" />
       <module name="health" />
       <extension name="coverage">
         <pattern>
@@ -665,6 +591,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="demo.de" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="health" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zhangbin.cogfig.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zhangbin.cogfig" />
+      <option name="MAIN_CLASS_NAME" value="com.zhangbin.cogfig.demo" />
+      <option name="METHOD_NAME" value="de" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HealthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="health" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zhangbin.HealthApplication" />
@@ -674,15 +616,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.HealthApplication" />
-      <item itemvalue="Application.StacticProxy" />
       <item itemvalue="Application.TeatPC2" />
       <item itemvalue="Application.test" />
+      <item itemvalue="Application.Test06" />
+      <item itemvalue="JUnit.demo.de" />
+      <item itemvalue="Application.Test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.demo.de" />
+        <item itemvalue="Application.Test06" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.TeatPC2" />
-        <item itemvalue="Application.StacticProxy" />
       </list>
     </recent_temporary>
   </component>
@@ -728,7 +674,15 @@
       <workItem from="1607865365214" duration="5242000" />
       <workItem from="1607918868141" duration="5487000" />
       <workItem from="1607953564560" duration="6203000" />
-      <workItem from="1608001481423" duration="1291000" />
+      <workItem from="1608001481423" duration="1977000" />
+      <workItem from="1608003514966" duration="3246000" />
+      <workItem from="1608256859003" duration="1457000" />
+      <workItem from="1608529950836" duration="646000" />
+      <workItem from="1608555800395" duration="3585000" />
+      <workItem from="1608864590426" duration="10547000" />
+      <workItem from="1609040609543" duration="2244000" />
+      <workItem from="1609054184233" duration="11754000" />
+      <workItem from="1609824888565" duration="599000" />
     </task>
     <task id="LOCAL-00001" summary="实现login跳转和注册功能">
       <created>1604328979842</created>
@@ -821,11 +775,30 @@
       <option name="project" value="LOCAL" />
       <updated>1607959712779</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="index页面按钮调整">
+      <created>1608002798169</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608002798169</updated>
+    </task>
+    <task id="LOCAL-00015" summary="index页面按钮调整">
+      <created>1608002929492</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1608002929492</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="demo_de - 2020.12.25 at 11h 43m 40s.xml">
+      <configuration name="demo.de" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="182846000" />
+    <option name="totallyTimeSpent" value="217610000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -838,8 +811,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="2553" y="155" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27546915" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30965146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -849,14 +823,14 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49878544" weight="0.4496454" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49878544" visible="true" weight="0.39858156" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39574468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32907802" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49865952" visible="true" weight="0.32624114" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5013405" side_tool="true" visible="true" weight="0.32624114" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49798927" weight="0.32624114" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020107" side_tool="true" weight="0.32577905" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.49959514" weight="0.32761312" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49959514" weight="0.32761312" />
@@ -871,11 +845,11 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Database" order="7" weight="0.32908848" />
-      <window_info anchor="right" id="Maven Projects" order="8" weight="0.32908848" />
-      <window_info anchor="right" id="Bean Validation" order="9" weight="0.32955465" />
+      <window_info anchor="right" id="Bean Validation" order="8" weight="0.32955465" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32908848" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26072386" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27949062" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -884,21 +858,21 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.328125" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49878544" visible="true" weight="0.40992907" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3962804" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32765958" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49878544" visible="true" weight="0.4496454" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39574468" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32907802" />
       <window_info anchor="bottom" id="Database Changes" order="7" weight="0.32907802" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49959514" weight="0.32761312" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50121456" side_tool="true" weight="0.32917318" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49798927" weight="0.32624114" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5020107" side_tool="true" weight="0.32577905" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Spring" order="11" sideWeight="0.49959514" weight="0.32761312" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.49959514" weight="0.32761312" />
       <window_info anchor="bottom" id="Messages" order="13" weight="0.32624114" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.32917318" />
-      <window_info anchor="bottom" id="Problems" order="15" weight="0.32907802" />
+      <window_info anchor="bottom" id="Problems" order="15" sideWeight="0.49798927" weight="0.32907802" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -930,26 +904,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="index页面按钮调整" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/static/css/bootstrap.min.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/grid.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/static/css/bootstrap.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="258" column="22" selection-start-line="258" selection-start-column="22" selection-end-line="258" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/dashboard.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/404.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
@@ -1002,13 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/resources/static/js/echarts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -1016,34 +963,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/resources/static/img/zhangquandan.jpg">
       <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" selection-start-line="17" selection-end-line="18" />
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/core-scripting.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/UserHealthDate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1063,41 +989,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/user/index.html" />
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserPresentationController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="34" column="60" selection-start-line="33" selection-start-column="3" selection-end-line="34" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/mapper/UserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="53" column="13" selection-start-line="28" selection-start-column="2" selection-end-line="53" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="74" column="64" selection-start-line="74" selection-start-column="64" selection-end-line="74" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="41" column="65" selection-start-line="41" selection-start-column="65" selection-end-line="41" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/TeatPC2.java" />
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/StacticProxy.java" />
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/实现类.java" />
@@ -1105,39 +996,11 @@
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/TeatPC2.java" />
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/jiekou.java" />
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/test.java" />
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserOperation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="19" column="60" selection-start-line="19" selection-start-column="60" selection-end-line="19" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/demo/shixianlei.java" />
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/utils/UserDatapresentation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="176" column="16" selection-start-line="176" selection-start-column="16" selection-end-line="176" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/UserRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="35" selection-start-line="35" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="263">
           <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138">
-          <caret line="80" column="29" selection-start-line="80" selection-start-column="22" selection-end-line="80" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -1151,74 +1014,154 @@
     <entry file="file://$PROJECT_DIR$/health/src/main/resources/static/js/bootstrap.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/frame.html">
+    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/updateHealthData.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="704">
-          <caret line="44" column="124" selection-start-line="44" selection-start-column="124" selection-end-line="44" selection-end-column="124" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="785">
+          <caret line="280" selection-start-line="280" selection-end-line="281" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/Test06.java" />
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/UserRealm.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="35" selection-start-line="35" selection-end-line="36" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/user/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="275">
           <caret line="19" column="93" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="93" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/index.html">
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserOperation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="784">
-          <caret line="49" column="47" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        <state relative-caret-position="416">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/addhealthdata.html">
+    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/user/personal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4272">
-          <caret line="267" column="61" selection-start-line="267" selection-start-column="61" selection-end-line="267" selection-end-column="61" />
+        <state relative-caret-position="139">
+          <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/updateHealthData.html">
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="45" column="107" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="107" />
-          <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#1;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#1;n#div#0;n#div#2;n#form#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="624">
+          <caret line="45" selection-start-line="43" selection-start-column="4" selection-end-line="45" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html">
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="34" column="204" selection-start-line="34" selection-start-column="171" selection-end-line="34" selection-end-column="204" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="832">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java">
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/demo.java" />
+    <entry file="file://$PROJECT_DIR$/health/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="240">
+          <caret line="67" column="21" selection-start-line="67" selection-start-column="21" selection-end-line="67" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="623">
+          <caret line="94" column="56" selection-start-line="94" selection-start-column="56" selection-end-line="94" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/utils/UserDatapresentation.java" />
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/cogfig/Test.java" />
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="25" column="17" selection-start-line="25" selection-start-column="17" selection-end-line="25" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/frame.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="62" column="34" selection-start-line="62" selection-start-column="28" selection-end-line="62" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="17" selection-start-line="17" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/health/src/main/resources/mapper/UserOperation.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="61" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="872">
+          <caret line="55" column="91" selection-start-line="55" selection-start-column="91" selection-end-line="55" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/BusinessController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="17" column="10" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/pojo/UserHealthDate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="21" column="16" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/addhealthdata.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="60" column="80" selection-start-line="60" selection-start-column="80" selection-end-line="60" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/resources/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1744">
+          <caret line="109" column="17" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/resources/templates/userAction/charts.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="912">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/health/src/main/java/com/zhangbin/controller/UserPresentationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="28" />
         </state>
       </provider>
     </entry>

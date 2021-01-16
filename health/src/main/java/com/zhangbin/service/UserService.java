@@ -43,4 +43,17 @@ public interface UserService {
     //根据用户ID查询特别关注数据
     List<UserHealthDate> querySpecialFocusById(Integer  user_id);
 
+    //index页面查询用户健康数据总和
+    int queryUserCount(Integer  user_id);
+
+    //index页面查询用户特别关注健康数据总和
+    int queryUserSpecialFocusCount(Integer  user_id);
+
+    //根据用户id查询个人编辑信息
+    User queryUserById(Integer id);
+
+    //根据用户ID查询最新一条健康数据
+    UserHealthDate queryNewHealthDataById(Integer  user_id);
+
+
 }

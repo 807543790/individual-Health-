@@ -25,6 +25,7 @@ public class User {
     private Date login_time;
     private Date gen_time;
     private Date last_login_time;
+    private Date user_birthday;
     private Integer count;
 
 

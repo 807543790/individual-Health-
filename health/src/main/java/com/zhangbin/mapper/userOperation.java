@@ -1,5 +1,6 @@
 package com.zhangbin.mapper;
 
+import com.zhangbin.pojo.User;
 import com.zhangbin.pojo.UserHealthDate;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
@@ -18,4 +19,13 @@ public interface UserOperation {
 
     //修改用户数据
     int updateUserHealthData(UserHealthDate userHealthDate);
+
+    //index页面查询用户健康数据总和
+    int queryUserCount(Integer  user_id);
+
+    //index页面查询用户特别关注健康数据总和
+    int queryUserSpecialFocusCount(Integer  user_id);
+
+    //根据用户id查询个人编辑信息
+    User queryUserById(Integer id);
 }

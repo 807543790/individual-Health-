@@ -4,7 +4,6 @@
     <title>个人健康管理中心</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!--<link rel="stylesheet" href="/css/bootstrap.css" />-->
     <link rel="stylesheet" href="/css/bootstrap.css" />
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
@@ -13,7 +12,6 @@
     <link rel="stylesheet" href="/css/matrix-media.css" />
     <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/jquery.gritter.css" />
-    <!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800' rel='stylesheet' type='text/css'>-->
 </head>
 <body>
 
@@ -32,7 +30,7 @@
             个人中心 <span class="caret"></span>
         </button>
         <ul class="dropdown-menu">
-            <li><a href="#">编辑个人信息</a></li>
+            <li><a th:href="@{/topersonal}">编辑个人信息</a></li>
             <li><a href="#">邮箱</a></li>
             <li><a href="#">消息通知</a></li>
             <li role="separator" class="divider"></li>

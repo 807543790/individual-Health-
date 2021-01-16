@@ -74,4 +74,24 @@ public class UserServiceImpl implements UserService {
     public int updateUserHealthData(UserHealthDate userHealthDate) {
         return userOperation.updateUserHealthData(userHealthDate);
     }
+
+    @Override
+    public int queryUserCount(Integer  user_id) {
+        return userOperation.queryUserCount(user_id);
+    }
+
+    @Override
+    public int queryUserSpecialFocusCount(Integer user_id) {
+        return userOperation.queryUserSpecialFocusCount(user_id);
+    }
+
+    @Override
+    public User queryUserById(Integer id) {
+        return userOperation.queryUserById(id);
+    }
+
+    @Override
+    public UserHealthDate queryNewHealthDataById(Integer user_id) {
+        return userMapper.queryNewHealthDataById(user_id);
+    }
 }

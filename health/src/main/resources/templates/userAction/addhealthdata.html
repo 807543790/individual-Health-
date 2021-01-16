@@ -57,8 +57,8 @@
             <div class="control-group">
               <label class="control-label">是否特别关注:</label>
               <div class="controls">
-                <input type="radio" class="iscollect"  name="iscollect" value="yes" style="width: 10%">是
-                <input type="radio" class="iscollect"  name="iscollect" value="no" style="width: 10%" checked="checked" />否
+                <input type="radio" class="iscollect"  name="iscollect" value="1" style="width: 10%">是
+                <input type="radio" class="iscollect"  name="iscollect" value="0" style="width: 10%" checked="checked" />否
               </div>
             </div>
             <div class="control-group">
@@ -415,8 +415,8 @@
                 alert("最多只能添加五十条数据");
             }else {
                 var label = "<label class='control-label'>第" + i + "条数据</label>";
-                var dataDate = "日期: <input type='date'  class='dataDate' name='data_date"+i+"' style='width: 30%' /><br>";
-                var dataValue = "数值: <input type='text' class='dateValue' placeholder='请填写检测数值' name='data_value"+i+"' style='width: 30%' /><br><hr>";
+                var dataDate = "日期: <input type='date'   name='health_time' style='width: 30%' /><br>";
+                var dataValue = "数值: <input type='text'  placeholder='请填写检测数值' name='health_score' style='width: 30%' /><br><hr>";
                 $("#InputOne").append(label);
                 $("#InputOne").append(dataDate);
                 $("#InputOne").append(dataValue);

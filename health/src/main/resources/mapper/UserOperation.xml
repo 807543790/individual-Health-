@@ -48,4 +48,16 @@
         #{health_scope_min},#{health_scope_max},#{remarks},#{user_id},#{health_color},#{show_type},#{iscollect})
     </update>
 
+    <select id="queryUserCount" resultType="Integer" parameterType="Integer">
+        select count(user_id) from permission where user_id = #{user_id}
+    </select>
+
+    <select id="queryUserSpecialFocusCount" resultType="Integer" parameterType="Integer">
+        select count(user_id) from permission where user_id = #{user_id} and iscollect = '1'
+    </select>
+
+    <select id="queryUserById" resultType="user" parameterType="Integer">
+        select login_name,email,mobile,user_birthday from user where id = #{id}
+    </select>
+
 </mapper>

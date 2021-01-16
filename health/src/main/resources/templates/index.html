@@ -26,8 +26,8 @@
   <div class="container-fluid">
     <div class="quick-actions_homepage">
       <ul class="quick-actions">
-        <li class="bg_lb"> <a th:href="@{/charts}"> <i class="icon-dashboard"></i> <span class="label label-important">20</span>健康数据</a> </li>
-        <li class="bg_lg span3"> <a th:href="@{/specialfocus}"> <i class="icon-star"></i> 特别关注</a> </li>
+        <li class="bg_lb"> <a th:href="@{/charts}"> <i class="icon-dashboard"></i> <span class="label label-important" th:text="${healthCount}"></span>健康数据</a> </li>
+        <li class="bg_lg span3"> <a th:href="@{/specialfocus}"> <i class="icon-star"></i> <span class="label label-success" th:text="${specialFocus}"></span>特别关注</a> </li>
         <li class="bg_ly"> <a href="widgets.html"> <i class="icon-inbox"></i><span class="label label-success">101</span> 消息通知 </a> </li>
         <li class="bg_lo span3"> <a href="tables.html"> <i class="icon-cog"></i> 个人中心</a> </li>
         <li class="bg_lo span3"> <a href="userAction/addhealthdata.html"> <i class="icon icon-file"></i>使用说明</a> </li>
@@ -82,9 +82,9 @@
         var myChart = echarts.init(document.getElementById("InputOne"));
         var option = {
             title: {
-                text: '1'
+                text: "参考区间:"+"100"+"—"+"10"
             },
-            color:'#8080ff',
+            color:"#FFB6C1" ,
             tooltip: {
                 trigger: 'axis',
                 axisPointer: {            // 坐标轴指示器，坐标轴触发有效
@@ -100,7 +100,7 @@
             xAxis: [
                 {
                     type: 'category',
-                    data: "1",
+                    data: "123",
                     axisTick: {
                         alignWithLabel: true
                     }
@@ -117,12 +117,13 @@
             series: [
                 {
                     name: "测试",
-                    type: 'line',
+                    type: "line",
                     barWidth: '60%',
-                    data: '1'
+                    data: [1,2,3]
                 }
             ]
         };
+
 
 
         myChart.setOption(option);

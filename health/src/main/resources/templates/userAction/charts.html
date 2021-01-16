@@ -4,11 +4,13 @@
 <title>健康数据展示</title>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
-<link rel="stylesheet" href="/css/matrix-style.css" />
-<link rel="stylesheet" href="/css/matrix-media.css" />
-<link href="/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="/css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="/css/fullcalendar.css" />
+  <link rel="stylesheet" href="/css/matrix-style.css" />
+  <link rel="stylesheet" href="/css/matrix-media.css" />
+  <link href="/font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/jquery.gritter.css" />
 </head>
 <body>
 <!--引入模板-->
@@ -24,12 +26,43 @@
   <div id="InputOne">
 
   </div>
+    <div>
+        <input type="text" th:value="${username}">
+    </div>
 </div>
 
-<script src="/js/jquery.min.js"></script>
+<script src="js/excanvas.min.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.ui.custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.flot.min.js"></script>
+<script src="js/jquery.flot.resize.min.js"></script>
+<script src="js/jquery.peity.min.js"></script>
+<script src="js/fullcalendar.min.js"></script>
+<script src="js/matrix.js"></script>
+<script src="js/matrix.dashboard.js"></script>
+<script src="js/jquery.gritter.min.js"></script>
+<script src="js/matrix.interface.js"></script>
+<script src="js/matrix.chat.js"></script>
+<script src="js/jquery.validate.js"></script>
+<script src="js/matrix.form_validation.js"></script>
+<script src="js/jquery.wizard.js"></script>
+<script src="js/jquery.uniform.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/matrix.popover.js"></script>
+<script src="js/jquery.dataTables.min.js"></script>
+<script src="js/matrix.tables.js"></script>
 <script src="/js/echarts.js"></script>
 </body>
 <script  th:inline="javascript">
+        $.ajax({
+            url:"/charts",
+            data:{},
+            success:function (data) {
+                var listdata =data.list;
+                console.log(listdata)
+            }
+        })
         var i =0;
         if([[${datelist0}]] != null){
             var dataDate = "<a href='/updateHealth?id=[[${healthId0}]]' title='当前数据添加或修改功能' class='btn btn-success'  style='float: right'>修改/添加</a><br><div id='main"+i+"' style='height: 400px;width:100%' ></div>";
